@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 110801,
+      "dispName": "Shreyas Iyer",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110802,
+      "dispName": "Sunil Narine",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 178.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 6.7,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110803,
+      "dispName": "Andre Russell",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 180.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110804,
+      "dispName": "Rinku Singh",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110805,
+      "dispName": "Phil Salt",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 168.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110806,
+      "dispName": "Venkatesh Iyer",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.8,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 110807,
+      "dispName": "Varun Chakaravarthy",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.1,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110808,
+      "dispName": "Mitchell Starc",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 110.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110809,
+      "dispName": "Harshit Rana",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 8.1,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110810,
+      "dispName": "Vaibhav Arora",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 110811,
+      "dispName": "Ramandeep Singh",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.9,
+        "rating": 3.0
+      }
+    }
+  ]
+}
