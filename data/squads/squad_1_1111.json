@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 111101,
+      "dispName": "Shikhar Dhawan",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111102,
+      "dispName": "Jonny Bairstow",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111103,
+      "dispName": "Sam Curran",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.3,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 111104,
+      "dispName": "Liam Livingstone",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 158.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.1,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 111105,
+      "dispName": "Jitesh Sharma",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 152.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111106,
+      "dispName": "Shashank Singh",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 111107,
+      "dispName": "Ashutosh Sharma",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 170.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111108,
+      "dispName": "Harpreet Brar",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 125.0,
+        "rating": 3.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 111109,
+      "dispName": "Kagiso Rabada",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 95.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 111110,
+      "dispName": "Arshdeep Singh",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 75.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 111111,
+      "dispName": "Harshal Patel",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 110.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 4.5
+      }
+    }
+  ]
+}
