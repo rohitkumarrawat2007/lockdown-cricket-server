@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lockdown-cricket
+    runtime: node
+    plan: free
+    buildCommand: yarn
+    startCommand: node server.js
