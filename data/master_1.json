@@ -1,0 +1,223 @@
+{
+  "leagues": [
+    {
+      "id": 1,
+      "dispName": "International",
+      "teams": [
+        {
+          "id": 1,
+          "dispName": "India",
+          "shortName": "IND",
+          "constraintId": 1
+        },
+        {
+          "id": 2,
+          "dispName": "Australia",
+          "shortName": "AUS",
+          "constraintId": 1
+        },
+        {
+          "id": 3,
+          "dispName": "England",
+          "shortName": "ENG",
+          "constraintId": 1
+        },
+        {
+          "id": 4,
+          "dispName": "South Africa",
+          "shortName": "SA",
+          "constraintId": 1
+        },
+        {
+          "id": 5,
+          "dispName": "New Zealand",
+          "shortName": "NZ",
+          "constraintId": 1
+        },
+        {
+          "id": 6,
+          "dispName": "Pakistan",
+          "shortName": "PAK",
+          "constraintId": 1
+        },
+        {
+          "id": 7,
+          "dispName": "West Indies",
+          "shortName": "WI",
+          "constraintId": 1
+        },
+        {
+          "id": 8,
+          "dispName": "Bangladesh",
+          "shortName": "BAN",
+          "constraintId": 1
+        },
+        {
+          "id": 9,
+          "dispName": "Sri Lanka",
+          "shortName": "SL",
+          "constraintId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dispName": "Indian T20 League",
+      "teams": [
+        {
+          "id": 1105,
+          "dispName": "Chennai",
+          "shortName": "CSK",
+          "constraintId": 1
+        },
+        {
+          "id": 1106,
+          "dispName": "Mumbai",
+          "shortName": "MI",
+          "constraintId": 1
+        },
+        {
+          "id": 1107,
+          "dispName": "Bangalore",
+          "shortName": "RCB",
+          "constraintId": 1
+        },
+        {
+          "id": 1108,
+          "dispName": "Kolkata",
+          "shortName": "KKR",
+          "constraintId": 1
+        },
+        {
+          "id": 1109,
+          "dispName": "Delhi",
+          "shortName": "DC",
+          "constraintId": 1
+        },
+        {
+          "id": 1110,
+          "dispName": "Hyderabad",
+          "shortName": "SRH",
+          "constraintId": 1
+        },
+        {
+          "id": 1111,
+          "dispName": "Punjab",
+          "shortName": "PBKS",
+          "constraintId": 1
+        },
+        {
+          "id": 1188,
+          "dispName": "Jaipur",
+          "shortName": "RR",
+          "constraintId": 1
+        },
+        {
+          "id": 1379,
+          "dispName": "Gujarat",
+          "shortName": "GT",
+          "constraintId": 1
+        }
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "48",
+      "dispName": "Wankhede Stadium, Mumbai",
+      "batRating": 4
+    },
+    {
+      "id": "54",
+      "dispName": "Eden Gardens, Kolkata",
+      "batRating": 4
+    },
+    {
+      "id": "90",
+      "dispName": "M. Chinnaswamy, Bangalore",
+      "batRating": 5
+    },
+    {
+      "id": "91",
+      "dispName": "Feroz Shah Kotla, Delhi",
+      "batRating": 3
+    },
+    {
+      "id": "125",
+      "dispName": "M. A. Chidambaram, Chennai",
+      "batRating": 3
+    },
+    {
+      "id": "139",
+      "dispName": "Rajiv Gandhi Stadium, Hyderabad",
+      "batRating": 4
+    },
+    {
+      "id": "158",
+      "dispName": "PCA Stadium, Mohali",
+      "batRating": 4
+    },
+    {
+      "id": "168",
+      "dispName": "Sawai Mansingh, Jaipur",
+      "batRating": 3
+    }
+  ],
+  "overs": [
+    2,
+    5,
+    10
+  ],
+  "superOvers": [
+    1
+  ],
+  "avatars": [
+    {
+      "id": 1,
+      "name": "Avatar 1",
+      "img": "avatar/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Avatar 2",
+      "img": "avatar/2.png"
+    },
+    {
+      "id": 3,
+      "name": "Avatar 3",
+      "img": "avatar/3.png"
+    },
+    {
+      "id": 4,
+      "name": "Avatar 4",
+      "img": "avatar/4.png"
+    }
+  ],
+  "constraints": [
+    {
+      "id": 1,
+      "formation": {
+        "1": {
+          "min": 3,
+          "max": 6
+        },
+        "2": {
+          "min": 3,
+          "max": 6
+        },
+        "3": {
+          "min": 1,
+          "max": 4
+        },
+        "4": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "nationality": {
+        "max": 4
+      }
+    }
+  ],
+  "hints": []
+}
