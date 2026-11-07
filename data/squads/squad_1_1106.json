@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 110601,
+      "dispName": "Rohit Sharma",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110602,
+      "dispName": "Jasprit Bumrah",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 6.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110603,
+      "dispName": "Suryakumar Yadav",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 172.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110604,
+      "dispName": "Hardik Pandya",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110605,
+      "dispName": "Ishan Kishan",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110606,
+      "dispName": "Tilak Varma",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 144.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 110607,
+      "dispName": "Tim David",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 168.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110608,
+      "dispName": "Piyush Chawla",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 100.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 7.9,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110609,
+      "dispName": "Gerald Coetzee",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 115.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 8.6,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110610,
+      "dispName": "Romario Shepherd",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 175.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.2,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 110611,
+      "dispName": "Nuwan Thushara",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 9,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.3,
+        "rating": 4.0
+      }
+    }
+  ]
+}
