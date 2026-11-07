@@ -1,0 +1,2309 @@
+{
+  "domTeamIndex": {
+    "1": {
+      "id": "1",
+      "dispName": "Australia",
+      "shortName": "AUS",
+      "constraintId": 20
+    },
+    "2": {
+      "id": "2",
+      "dispName": "Bangladesh",
+      "shortName": "BAN",
+      "constraintId": 20
+    },
+    "3": {
+      "id": "3",
+      "dispName": "England",
+      "shortName": "ENG",
+      "constraintId": 20
+    },
+    "4": {
+      "id": "4",
+      "dispName": "India",
+      "shortName": "IND",
+      "constraintId": 20
+    },
+    "5": {
+      "id": "5",
+      "dispName": "New Zealand",
+      "shortName": "NZ",
+      "constraintId": 20
+    },
+    "6": {
+      "id": "6",
+      "dispName": "Pakistan",
+      "shortName": "PAK",
+      "constraintId": 20
+    },
+    "7": {
+      "id": "7",
+      "dispName": "South Africa",
+      "shortName": "SA",
+      "constraintId": 20
+    },
+    "8": {
+      "id": "8",
+      "dispName": "Sri Lanka",
+      "shortName": "SL",
+      "constraintId": 20
+    },
+    "9": {
+      "id": "9",
+      "dispName": "West Indies",
+      "shortName": "WI",
+      "constraintId": 20
+    },
+    "1105": {
+      "id": "1105",
+      "dispName": "Bangalore",
+      "shortName": "BLR",
+      "constraintId": 19
+    },
+    "1106": {
+      "id": "1106",
+      "dispName": "Kolkata",
+      "shortName": "KOL",
+      "constraintId": 19
+    },
+    "1107": {
+      "id": "1107",
+      "dispName": "Punjab",
+      "shortName": "PJB",
+      "constraintId": 19
+    },
+    "1108": {
+      "id": "1108",
+      "dispName": "Chennai",
+      "shortName": "CHE",
+      "constraintId": 19
+    },
+    "1109": {
+      "id": "1109",
+      "dispName": "Delhi",
+      "shortName": "DEL",
+      "constraintId": 19
+    },
+    "1110": {
+      "id": "1110",
+      "dispName": "Rajasthan",
+      "shortName": "RAJ",
+      "constraintId": 19
+    },
+    "1111": {
+      "id": "1111",
+      "dispName": "Mumbai",
+      "shortName": "MUM",
+      "constraintId": 19
+    },
+    "1188": {
+      "id": "1188",
+      "dispName": "Afghanistan",
+      "shortName": "AFG",
+      "constraintId": 20
+    },
+    "1379": {
+      "id": "1379",
+      "dispName": "Hyderabad",
+      "shortName": "HYD",
+      "constraintId": 19
+    }
+  },
+  "userPlaying11": [
+    4196,
+    5380,
+    4308,
+    4195,
+    66573,
+    4311,
+    63706,
+    10085,
+    10094,
+    10053,
+    10027
+  ],
+  "userPlayerListIndex": {
+    "4195": {
+      "id": "4195",
+      "dispName": "M Wade",
+      "countryId": 1,
+      "skillId": 4,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "106.23",
+        "avg": "27.23",
+        "runPerInn": "22.49",
+        "rating": "2.5"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "4196": {
+      "id": "4196",
+      "dispName": "A Finch",
+      "countryId": 1,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "123.03",
+        "avg": "36.08",
+        "runPerInn": "31.95",
+        "rating": "4.5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "10.14",
+        "sr": "33.28",
+        "rating": "2"
+      }
+    },
+    "4308": {
+      "id": "4308",
+      "dispName": "Steven S",
+      "countryId": 1,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "129.39",
+        "avg": "31.60",
+        "runPerInn": "24.33",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "7.82",
+        "sr": "15.25",
+        "rating": "3"
+      }
+    },
+    "4311": {
+      "id": "4311",
+      "dispName": "M Stoinis",
+      "countryId": 1,
+      "skillId": 3,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "146.61",
+        "avg": "35.83",
+        "runPerInn": "34.06",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "8.92",
+        "sr": "19.00",
+        "rating": "3"
+      }
+    },
+    "5380": {
+      "id": "5380",
+      "dispName": "D Warner",
+      "countryId": 1,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "141.78",
+        "avg": "37.93",
+        "runPerInn": "33.04",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 2,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "10027": {
+      "id": "10027",
+      "dispName": "K Richardson",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "102.92",
+        "avg": "14.68",
+        "runPerInn": "7.75",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "2.05",
+        "sr": "18.15",
+        "rating": "5"
+      }
+    },
+    "10053": {
+      "id": "10053",
+      "dispName": "M Starc",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 2,
+        "sr": "100.03",
+        "avg": "8.86",
+        "runPerInn": "4.43",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "7.03",
+        "sr": "14.67",
+        "rating": "5"
+      }
+    },
+    "10085": {
+      "id": "10085",
+      "dispName": "G Maxwell",
+      "countryId": 1,
+      "skillId": 3,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "120.53",
+        "avg": "27.57",
+        "runPerInn": "23.84",
+        "rating": "4"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "8.02",
+        "sr": "24.28",
+        "rating": "3.5"
+      }
+    },
+    "10090": {
+      "id": "10090",
+      "dispName": "Coulter-Nile",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "116.77",
+        "avg": "14.88",
+        "runPerInn": "9.06",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "7.97",
+        "sr": "18.07",
+        "rating": "5"
+      }
+    },
+    "10094": {
+      "id": "10094",
+      "dispName": "M Marsh",
+      "countryId": 1,
+      "skillId": 3,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "115.32",
+        "avg": "30.36",
+        "runPerInn": "22.77",
+        "rating": "3"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "7.90",
+        "sr": "19.81",
+        "rating": "5"
+      }
+    },
+    "56964": {
+      "id": "56964",
+      "dispName": "P Cummins",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "112.77",
+        "avg": "14.09",
+        "runPerInn": "7.95",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "7.39",
+        "sr": "18.77",
+        "rating": "4"
+      }
+    },
+    "57308": {
+      "id": "57308",
+      "dispName": "B Stanlake",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 2,
+        "sr": "104.77",
+        "avg": "13.50",
+        "runPerInn": "2.25",
+        "rating": "2"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "7.91",
+        "sr": "20.23",
+        "rating": "5"
+      }
+    },
+    "58913": {
+      "id": "58913",
+      "dispName": "A Zampa",
+      "countryId": 1,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "101.26",
+        "avg": "6.22",
+        "runPerInn": "3.50",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "6.50",
+        "sr": "17.85",
+        "rating": "5"
+      }
+    },
+    "63706": {
+      "id": "63706",
+      "dispName": "A Carey",
+      "countryId": 1,
+      "skillId": 4,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "118.56",
+        "avg": "31.37",
+        "runPerInn": "27.12",
+        "rating": "2"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 2,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "66573": {
+      "id": "66573",
+      "dispName": "D Short",
+      "countryId": 1,
+      "skillId": 3,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "143.03",
+        "avg": "49.91",
+        "runPerInn": "46.02",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 2,
+        "eco": "8.80",
+        "sr": "22.21",
+        "rating": "2"
+      }
+    }
+  },
+  "oppPlayerListIndex": {
+    "3732": {
+      "id": "3732",
+      "dispName": "L Plunkett",
+      "countryId": 3,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "107.18",
+        "avg": "14.66",
+        "runPerInn": "9.02",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "8.17",
+        "sr": "20.83",
+        "rating": "3.5"
+      }
+    },
+    "3823": {
+      "id": "3823",
+      "dispName": "E Morgan",
+      "countryId": 3,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "132.39",
+        "avg": "27.12",
+        "runPerInn": "23.32",
+        "rating": "4"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "4661": {
+      "id": "4661",
+      "dispName": "A Rashid",
+      "countryId": 3,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "98.54",
+        "avg": "12.49",
+        "runPerInn": "7.90",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "7.63",
+        "sr": "18.20",
+        "rating": "3.5"
+      }
+    },
+    "4688": {
+      "id": "4688",
+      "dispName": "M Ali",
+      "countryId": 3,
+      "skillId": 3,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 2,
+        "sr": "147.09",
+        "avg": "25.32",
+        "runPerInn": "22.77",
+        "rating": "2.5"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 2,
+        "eco": "8.02",
+        "sr": "20.87",
+        "rating": "3"
+      }
+    },
+    "9782": {
+      "id": "9782",
+      "dispName": "J Buttler",
+      "countryId": 3,
+      "skillId": 4,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "145.14",
+        "avg": "30.43",
+        "runPerInn": "25.03",
+        "rating": "4.5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "10129": {
+      "id": "10129",
+      "dispName": "J Root",
+      "countryId": 3,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "126.31",
+        "avg": "30.54",
+        "runPerInn": "24.53",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "10.04",
+        "sr": "26.40",
+        "rating": "2.5"
+      }
+    },
+    "10130": {
+      "id": "10130",
+      "dispName": "B Stokes",
+      "countryId": 3,
+      "skillId": 3,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 2,
+        "sr": "132.77",
+        "avg": "24.78",
+        "runPerInn": "20.62",
+        "rating": "3"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "8.49",
+        "sr": "22.60",
+        "rating": "3.5"
+      }
+    },
+    "19394": {
+      "id": "19394",
+      "dispName": "Bairstow",
+      "countryId": 3,
+      "skillId": 4,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "145.70",
+        "avg": "28.50",
+        "runPerInn": "23.30",
+        "rating": "5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "22878": {
+      "id": "22878",
+      "dispName": "A Hales",
+      "countryId": 3,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "135.65",
+        "avg": "30.29",
+        "runPerInn": "28.04",
+        "rating": "4.5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "26718": {
+      "id": "26718",
+      "dispName": "C Jordan",
+      "countryId": 3,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "126.67",
+        "avg": "14.22",
+        "runPerInn": "8.66",
+        "rating": "2"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "8.73",
+        "sr": "18.50",
+        "rating": "4.5"
+      }
+    },
+    "33031": {
+      "id": "33031",
+      "dispName": "J Roy",
+      "countryId": 3,
+      "skillId": 1,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "144.91",
+        "avg": "27.43",
+        "runPerInn": "26.10",
+        "rating": "3.5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "11.00",
+        "sr": "18.00",
+        "rating": "1"
+      }
+    },
+    "35128": {
+      "id": "35128",
+      "dispName": "D Willey",
+      "countryId": 3,
+      "skillId": 3,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 2,
+        "sr": "121.90",
+        "avg": "23.64",
+        "runPerInn": "19.39",
+        "rating": "2"
+      },
+      "bowlingStats": {
+        "hand": 2,
+        "type": 1,
+        "eco": "8.32",
+        "sr": "17.74",
+        "rating": "4.5"
+      }
+    },
+    "58285": {
+      "id": "58285",
+      "dispName": "S Billings",
+      "countryId": 3,
+      "skillId": 4,
+      "secSkillId": 1,
+      "battingStats": {
+        "hand": 1,
+        "sr": "135.05",
+        "avg": "23.55",
+        "runPerInn": "19.96",
+        "rating": "2.5"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 2,
+        "eco": "11.00",
+        "sr": "",
+        "rating": "1"
+      }
+    },
+    "64149": {
+      "id": "64149",
+      "dispName": "T Curran",
+      "countryId": 3,
+      "skillId": 3,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "105.67",
+        "avg": "18.57",
+        "runPerInn": "12.65",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "9.47",
+        "sr": "16.22",
+        "rating": "5"
+      }
+    },
+    "64254": {
+      "id": "64254",
+      "dispName": "J Archer",
+      "countryId": 3,
+      "skillId": 2,
+      "secSkillId": 2,
+      "battingStats": {
+        "hand": 1,
+        "sr": "114.07",
+        "avg": "16.76",
+        "runPerInn": "8.55",
+        "rating": "1"
+      },
+      "bowlingStats": {
+        "hand": 1,
+        "type": 1,
+        "eco": "7.51",
+        "sr": "17.27",
+        "rating": "4"
+      }
+    }
+  },
+  "userRoomData": {
+    "isCreator": true,
+    "roomId": "GGIXIB",
+    "oppName": "Opponent",
+    "oppAvatar": "./images/avatar/1.png",
+    "userId": "6c24ce88",
+    "userName": "Me",
+    "userAvatar": "./images/avatar/2.png",
+    "userSelectedOver": "undefined",
+    "userSelectedVenue": "undefined",
+    "userTeamId": "1",
+    "myTeamId": "1",
+    "oppTeamId": "3"
+  },
+  "bat": {
+    "preSelectedPlayers": [
+      66573,
+      4311
+    ],
+    "tooltip": {
+      "selectbatsman": {
+        "msg": "Higher the rating of the batsman, lower the chances of him getting out. Higher the strike rate, higher the chances of scoring runs on each ball."
+      },
+      "expBat1": {
+        "msg": "<span class='si-int-tuts__name'>Hey Champion!</span> Let’s get started with the basics of <b>batting</b>",
+        "timeoutKey": "expBat1"
+      },
+      "expBat2": {
+        "msg": "Each ball has <b>12 possible outcomes</b> in the form of runs, wickets and extras",
+        "timeoutKey": "expBat2"
+      },
+      "expBat3": {
+        "msg": "Your decision as a batsman will determine whether you score or get out!",
+        "timeoutKey": "expBat3"
+      },
+      "expBat4": {
+        "msg": "You can score 0-3 runs on a ball",
+        "focusKey": "runs",
+        "timeoutKey": "expBat4"
+      },
+      "expBat5": {
+        "msg": "Hit <b>boundaries</b>",
+        "focusKey": "boundaries",
+        "timeoutKey": "expBat5"
+      },
+      "expBat6": {
+        "msg": "Get an extra",
+        "focusKey": "extras",
+        "timeoutKey": "expBat6"
+      },
+      "expBat7": {
+        "msg": "Or land in <b>danger</b>",
+        "focusKey": "chances",
+        "timeoutKey": "expBat7"
+      },
+      "expBat8": {
+        "msg": "While batting, you can either <b>Defend</b> or <b>Attack</b> a ball",
+        "timeoutKey": "expBat8"
+      },
+      "expBat9": {
+        "msg": "If you choose to <b>Defend, one dice</b> is rolled with an outcome between 1 and 6. You have fewer runs on offer but also lower your chances of getting out. Click <b>DEFEND</b> to continue",
+        "focusKey": "defend",
+        "actionRequired": true,
+        "timeoutKey": "expBat9"
+      },
+      "expBat10": {
+        "msg": "If you choose to <b>Attack, two dice</b> are rolled with an outcome between 2 and 12. You have more runs on offer but also increase your chances of getting out. Click <b>ATTACK</b> to continue",
+        "focusKey": "attack",
+        "actionRequired": true,
+        "timeoutKey": "expBat10"
+      },
+      "expBat11": {
+        "msg": "Let’s try hitting a few of them in the nets...",
+        "isLast": true,
+        "timeoutKey": "expBat11"
+      },
+      "onBowl1": {
+        "msg": "That's a <b>Full Toss</b> for you first up. Go ahead, <b>Attack</b> this one",
+        "actionRequired": true
+      },
+      "onPlay1": {
+        "msg": "That was a good shot, get ready for the next one"
+      },
+      "onBowl2": {
+        "msg": "That's a <b>Yorker</b>, you need to be careful with this one. It is safer to <b>Defend</b>",
+        "actionRequired": true
+      },
+      "onPlay2": {
+        "msg": "That was well negotiated, now get ready for the next one"
+      },
+      "onBowl3": {
+        "msg": "That's a <b>Good Length</b> ball, chance your arm and <b>Attack</b>",
+        "actionRequired": true
+      },
+      "onPlay3": {
+        "msg": "What a SHOT!! You’re getting a hang of it. Now lets understand <b>Wickets</b> and <b>Chances</b> better"
+      },
+      "checkchances": {
+        "msg": "Now lets understand <b>Wickets</b> and <b>Chances</b> better"
+      },
+      "onBowl4": {
+        "msg": "That's another <b>Good Length</b> ball, lets see what happens when you <b>Defend</b>",
+        "actionRequired": true
+      },
+      "onRollAgain4": {
+        "msg": "You get chance to <b>Roll 2nd Dice</b>, remember defending let’s you roll again when you land in Danger and lowers your chance of getting out",
+        "actionRequired": true
+      },
+      "onBowl5": {
+        "msg": "That's a <b>Slower</b> one, lets try to <b>Attack</b> this ball",
+        "actionRequired": true
+      },
+      "onPlay5": {
+        "msg": "What just happened? Well, high-star batsmen may get a <b>Chance</b> in 10/20 over games. But you will not be so lucky the next time"
+      },
+      "onBowl6": {
+        "msg": "That's a <b>Short Ball</b>, let's take a chance and <b>Attack</b> this one",
+        "actionRequired": true
+      },
+      "onPlay6": {
+        "msg": "Told you so! Here’s a tip for you. In a 20 over game, high-star batsmen are more likely to get at least one chance before getting out while low-star batsmen will get out straight away."
+      },
+      "battingTutsOver": {
+        "msg": "Now that you have perfected your batting skills, lets bowl a few balls too.."
+      }
+    },
+    "focus": {
+      "runs": {
+        "ref": "val",
+        "outputs": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "boundaries": {
+        "ref": "val",
+        "outputs": [
+          4,
+          6
+        ]
+      },
+      "extras": {
+        "ref": "val",
+        "outputs": [
+          "no ball",
+          "wide",
+          "leg bye"
+        ]
+      },
+      "chances": {
+        "ref": "val",
+        "outputs": [
+          "-2"
+        ]
+      },
+      "defend": {
+        "ref": "pos",
+        "forceAction": "defend",
+        "positions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "attack": {
+        "ref": "pos",
+        "forceAction": "attack",
+        "positions": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    "initialData": {
+      "cardIndex": 4
+    },
+    "simulation": {
+      "1": {
+        "START_OVER": {
+          "grid": [
+            [
+              0,
+              "-2",
+              0,
+              "-2",
+              1,
+              1,
+              2,
+              3,
+              "-2",
+              1,
+              4,
+              6
+            ],
+            [
+              "leg bye",
+              1,
+              "-2",
+              2,
+              3,
+              1,
+              4,
+              "-2",
+              "no ball",
+              0,
+              6,
+              "wide"
+            ],
+            [
+              0,
+              0,
+              "-2",
+              2,
+              1,
+              1,
+              4,
+              "-2",
+              6,
+              1,
+              4,
+              2
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              "-2",
+              1,
+              "-2",
+              1,
+              2,
+              4,
+              4,
+              6
+            ],
+            [
+              0,
+              4,
+              "-2",
+              1,
+              1,
+              0,
+              4,
+              2,
+              "-2",
+              "no ball",
+              6,
+              1
+            ],
+            [
+              "leg bye",
+              "-2",
+              0,
+              0,
+              1,
+              2,
+              2,
+              1,
+              2,
+              6,
+              3,
+              0
+            ]
+          ],
+          "OD": [
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            }
+          ],
+          "BD": [
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            }
+          ],
+          "newBowlerId": "64254",
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "66573",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "nonStriker": {
+              "player_id": "4311",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.0",
+              "Runs": 0,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 0,
+              "Wickets": 0,
+              "Balls": 0,
+              "last6": [],
+              "Overs": "0.0",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45253
+        },
+        "ON_BOWL": {
+          "cardIndex": 0,
+          "eventID": 45254,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 5,
+            "dice2": 6
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "4311",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "nonStriker": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.1",
+              "Runs": 3,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 3,
+              "Wickets": 0,
+              "Balls": 1,
+              "last6": [
+                "3"
+              ],
+              "Overs": "0.1",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45258,
+          "inningsEnd": false
+        }
+      },
+      "2": {
+        "START_BALL": {
+          "eventID": 45259
+        },
+        "ON_BOWL": {
+          "cardIndex": 1,
+          "eventID": 45260,
+          "forceAction": "defend"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 1
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "4311",
+              "Runs": 0,
+              "Balls": 1
+            },
+            "nonStriker": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.2",
+              "Runs": 3,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 3,
+              "Wickets": 0,
+              "Balls": 2,
+              "last6": [
+                "3",
+                "0"
+              ],
+              "Overs": "0.2",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45261,
+          "inningsEnd": false
+        }
+      },
+      "3": {
+        "START_BALL": {
+          "eventID": 45262
+        },
+        "ON_BOWL": {
+          "cardIndex": 2,
+          "eventID": 45266,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 4,
+            "dice2": 5
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "4311",
+              "Runs": 6,
+              "Balls": 2
+            },
+            "nonStriker": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.3",
+              "Runs": 9,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 9,
+              "Wickets": 0,
+              "Balls": 3,
+              "last6": [
+                "3",
+                "0",
+                "6"
+              ],
+              "Overs": "0.3",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45268,
+          "inningsEnd": false
+        }
+      },
+      "4": {
+        "START_BALL": {
+          "eventID": 45273
+        },
+        "ON_BOWL": {
+          "cardIndex": 3,
+          "eventID": 45279,
+          "forceAction": "defend"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 3
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "4311",
+              "Runs": 6,
+              "Balls": 2
+            },
+            "nonStriker": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.3",
+              "Runs": 9,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 9,
+              "Wickets": 0,
+              "Balls": 3,
+              "last6": [
+                "3",
+                "0",
+                "6"
+              ],
+              "Overs": "0.3",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45280,
+          "inningsEnd": false,
+          "LEDMsg": "Roll second dice ",
+          "rollAgain": true
+        },
+        "PLAY_SHOT_AGAIN": {
+          "action": "rollAgain"
+        },
+        "ON_PLAY_SHOT_AGAIN": {
+          "dices": {
+            "dice1": 3,
+            "dice2": 2
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "nonStriker": {
+              "player_id": "4311",
+              "Runs": 7,
+              "Balls": 3
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.4",
+              "Runs": 10,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 10,
+              "Wickets": 0,
+              "Balls": 4,
+              "last6": [
+                "3",
+                "0",
+                "6",
+                "1"
+              ],
+              "Overs": "0.4",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45293,
+          "inningsEnd": false
+        }
+      },
+      "5": {
+        "START_BALL": {
+          "eventID": 45281
+        },
+        "ON_BOWL": {
+          "cardIndex": 4,
+          "eventID": 45285,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 4,
+            "dice2": 4
+          },
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "66573",
+              "Runs": 3,
+              "Balls": 2
+            },
+            "nonStriker": {
+              "player_id": "4311",
+              "Runs": 7,
+              "Balls": 3
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "0.5",
+              "Runs": 10,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 10,
+              "Wickets": 0,
+              "Balls": 5,
+              "last6": [
+                "3",
+                "0",
+                "6",
+                "1",
+                "0"
+              ],
+              "Overs": "0.5",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45289,
+          "inningsEnd": false,
+          "gL": true,
+          "glMsg": {
+            "msg": "OHHHH SO CLOSE!",
+            "bowlMsg": "Keep at it, you'll get this batsman next time",
+            "batMsg": "You survived a chance"
+          },
+          "LEDMsg": "Bad luck for the bowler"
+        }
+      },
+      "6": {
+        "START_BALL": {
+          "eventID": 45301
+        },
+        "ON_BOWL": {
+          "cardIndex": 5,
+          "eventID": 45303,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 2,
+            "dice2": 5
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "4311",
+              "Runs": 7,
+              "Balls": 3
+            },
+            "currentBowler": {
+              "player_id": "64254",
+              "Overs": "1.0",
+              "Runs": 10,
+              "Wickets": 1
+            },
+            "inningsInfo": {
+              "Total": 10,
+              "Wickets": 0,
+              "Balls": 6,
+              "last6": [
+                "3",
+                "0",
+                "6",
+                "1",
+                "0",
+                "W"
+              ],
+              "Overs": "1.0",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45306,
+          "inningsEnd": false,
+          "LEDMsg": "Took a risk, OUT",
+          "isWicket": true,
+          "batsc": [
+            {
+              "id": "4311",
+              "B": 3,
+              "R": 7
+            },
+            {
+              "id": "66573",
+              "B": 3,
+              "R": 3,
+              "Howout": "c",
+              "Bowler": "64254",
+              "Fielder": 33031
+            }
+          ],
+          "bId": "66573"
+        }
+      }
+    }
+  },
+  "bowl": {
+    "preSelectedPlayers": [
+      10027
+    ],
+    "initialData": {
+      "cardIndex": 3,
+      "spareBatsman": {
+        "player_id": "19394",
+        "Runs": 0,
+        "Balls": 0
+      }
+    },
+    "tooltip": {
+      "selectbowler": {
+        "msg": "Higher the rating of the bowler, better the chances of taking a wicket. Lower the economy rate, lower the chances of conceding runs on each ball."
+      },
+      "info1": {
+        "msg": "Before the start of each over, you will get <b>6 cards from a deck of 30</b>"
+      },
+      "info2": {
+        "msg": "High-star bowlers will have more <b>Red Cards</b> in their deck of 30, these are good deliveries with fewer runs and/or more wicket chances"
+      },
+      "info3": {
+        "msg": "Low-star bowlers will have more <b>Green Cards</b> in their deck of 30, these are loose deliveries with more runs and/or fewer wicket chances"
+      },
+      "info4": {
+        "msg": "<b>Yellow</b> and <b>Orange Cards</b> are average deliveries"
+      },
+      "cardExplain1": {
+        "msg": "Tap once to see the outcome for each delivery. Let’s start by tapping a <b>Half-Volley</b>",
+        "actionRequired": true,
+        "expectedCardIndex": 4,
+        "holdTime": 3000
+      },
+      "cardExplain2": {
+        "msg": "Now tap the <b>Fast Yorker</b> once to see the possible outcomes",
+        "actionRequired": true,
+        "expectedCardIndex": 0
+      },
+      "cardExplain3": {
+        "msg": "As you can see, the <b>Fast Yorker</b> has more <b>Red Skulls</b> and fewer runs",
+        "focusKey": "chances",
+        "holdTime": 4000
+      },
+      "cardExplain4": {
+        "msg": "Okay Champion! Now let’s actually bowl, for which you need to double tap a delivery.",
+        "isLast": true
+      },
+      "onBowl1": {
+        "msg": "Let's start with a <b>Full Toss</b>, double tap the card",
+        "actionRequired": true,
+        "expectedCardIndex": 5
+      },
+      "onBowl5": {
+        "msg": "Now, let's try a <b>Slower ball</b>. Double tap the card",
+        "actionRequired": true,
+        "expectedCardIndex": 1
+      },
+      "onPlay5": {
+        "msg": "When you bowl an extra, a new ball shows up from the bowler's deck"
+      },
+      "onBowl7": {
+        "msg": "Now let's try a <b>Fast Yorker</b>",
+        "actionRequired": true,
+        "expectedCardIndex": 0
+      },
+      "onPlay7": {
+        "msg": "<span class='si-int-tuts__name'>High Five!</span> Now here are some more tips to help you understand who to bowl and who to send into bat"
+      },
+      "goToHome": {
+        "msg": "Well, that's it. Go on and win games Champion!",
+        "ctaName": "Go to Home"
+      }
+    },
+    "focus": {
+      "allStarBalls": {
+        "ref": "val",
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "highStarBalls": {
+        "ref": "val",
+        "strength": [
+          1,
+          2
+        ]
+      },
+      "averageStarBalls": {
+        "ref": "val",
+        "strength": [
+          3,
+          4
+        ]
+      },
+      "lowStarBalls": {
+        "ref": "val",
+        "strength": [
+          5,
+          6
+        ]
+      },
+      "chances": {
+        "ref": "val",
+        "outputs": [
+          "-2"
+        ]
+      }
+    },
+    "simulation": {
+      "1": {
+        "START_OVER": {
+          "grid": [
+            [
+              "leg bye",
+              "-2",
+              0,
+              0,
+              1,
+              2,
+              "-2",
+              1,
+              2,
+              "-2",
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              "-2",
+              1,
+              1,
+              0,
+              4,
+              2,
+              "-2",
+              6,
+              1,
+              "wide"
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              "-2",
+              1,
+              1,
+              2,
+              4,
+              4,
+              "-2",
+              6
+            ],
+            [
+              0,
+              0,
+              "-2",
+              2,
+              1,
+              1,
+              4,
+              "-2",
+              2,
+              1,
+              4,
+              2
+            ],
+            [
+              "leg bye",
+              1,
+              "-2",
+              2,
+              3,
+              0,
+              1,
+              4,
+              "no ball",
+              "-2",
+              6,
+              "wide"
+            ],
+            [
+              0,
+              1,
+              0,
+              "-2",
+              1,
+              1,
+              2,
+              3,
+              2,
+              1,
+              4,
+              6
+            ]
+          ],
+          "OD": [
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            }
+          ],
+          "BD": [
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 6,
+              "bN": "Full Toss"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 5,
+              "bN": "Half Volley"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 4,
+              "bN": "Short Ball"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 3,
+              "bN": "Good Length"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 2,
+              "bN": "Slower ball"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            },
+            {
+              "bS": 1,
+              "bN": "Fast Yorker"
+            }
+          ],
+          "newBowlerId": "64254",
+          "scorecard": {
+            "onStrikeBatsman": {
+              "player_id": "3823",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "nonStriker": {
+              "player_id": "10129",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.0",
+              "Runs": 0,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 0,
+              "Wickets": 0,
+              "Balls": 0,
+              "last6": [],
+              "Overs": "0.0",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45253
+        },
+        "ON_BOWL": {
+          "cardIndex": 5,
+          "eventID": 45254
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 3,
+            "dice2": 5
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.1",
+              "Runs": 3,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 3,
+              "Wickets": 0,
+              "Balls": 1,
+              "last6": [
+                "3"
+              ],
+              "Overs": "0.1",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45306
+        }
+      },
+      "2": {
+        "START_BALL": {
+          "eventID": 45281
+        },
+        "ON_BOWL": {
+          "cardIndex": 4,
+          "eventID": 45254,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 6,
+            "dice2": 5
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 6,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.2",
+              "Runs": 9,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 9,
+              "Wickets": 0,
+              "Balls": 2,
+              "last6": [
+                "3",
+                "6"
+              ],
+              "Overs": "0.2",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "LEDMsg": "Out of the park!",
+          "eventID": 45307,
+          "inningsEnd": false
+        }
+      },
+      "3": {
+        "START_BALL": {
+          "eventID": 45282
+        },
+        "ON_BOWL": {
+          "cardIndex": 3,
+          "eventID": 45255,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 2
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 6,
+              "Balls": 2
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.3",
+              "Runs": 9,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 9,
+              "Wickets": 0,
+              "Balls": 3,
+              "last6": [
+                "3",
+                "6",
+                "0"
+              ],
+              "Overs": "0.3",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45308,
+          "inningsEnd": false
+        }
+      },
+      "4": {
+        "START_BALL": {
+          "eventID": 45283
+        },
+        "ON_BOWL": {
+          "cardIndex": 2,
+          "eventID": 45256,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 4,
+            "dice2": 5
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 10,
+              "Balls": 3
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.4",
+              "Runs": 13,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 13,
+              "Wickets": 0,
+              "Balls": 4,
+              "last6": [
+                "3",
+                "6",
+                "0",
+                "4"
+              ],
+              "Overs": "0.4",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45309,
+          "inningsEnd": false,
+          "LEDMsg": "FOUR!"
+        }
+      },
+      "5": {
+        "START_BALL": {
+          "eventID": 45284
+        },
+        "ON_BOWL": {
+          "cardIndex": 1,
+          "eventID": 45257,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 6,
+            "dice2": 6
+          },
+          "aC": {
+            "bS": 3,
+            "bN": "Good Length"
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 0,
+              "Balls": 0
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.1",
+              "Runs": 4,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 4,
+              "Wickets": 0,
+              "Balls": 1,
+              "last6": [
+                "3",
+                "1wd"
+              ],
+              "Overs": "0.1",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45310,
+          "inningsEnd": false
+        }
+      },
+      "6": {
+        "START_BALL": {
+          "eventID": 45284
+        },
+        "ON_BOWL": {
+          "cardIndex": 1,
+          "eventID": 45257,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 1
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "onStrikeBatsman": {
+              "player_id": "10129",
+              "Runs": 10,
+              "Balls": 4
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.5",
+              "Runs": 14,
+              "Wickets": 0
+            },
+            "inningsInfo": {
+              "Total": 14,
+              "Wickets": 0,
+              "Balls": 6,
+              "last6": [
+                "3",
+                "6",
+                "0",
+                "4",
+                "1wd",
+                "0"
+              ],
+              "Overs": "0.5",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "eventID": 45310,
+          "inningsEnd": false
+        }
+      },
+      "7": {
+        "START_BALL": {
+          "eventID": 45285
+        },
+        "ON_BOWL": {
+          "cardIndex": 0,
+          "eventID": 45258,
+          "forceAction": "attack"
+        },
+        "ON_PLAY_SHOT": {
+          "dices": {
+            "dice1": 5,
+            "dice2": 5
+          },
+          "scorecard": {
+            "nonStriker": {
+              "player_id": "3823",
+              "Runs": 3,
+              "Balls": 1
+            },
+            "currentBowler": {
+              "player_id": "10027",
+              "Overs": "0.2",
+              "Runs": 4,
+              "Wickets": 1
+            },
+            "inningsInfo": {
+              "Total": 4,
+              "Wickets": 1,
+              "Balls": 2,
+              "last6": [
+                "3",
+                "1wd",
+                "W"
+              ],
+              "Overs": "0.2",
+              "maxOvers": 1
+            },
+            "isPP": true
+          },
+          "batsc": [
+            {
+              "id": "3823",
+              "B": 3,
+              "R": 1
+            },
+            {
+              "id": "10129",
+              "B": 5,
+              "R": 10,
+              "Howout": "b",
+              "Bowler": "10027"
+            }
+          ],
+          "eventID": 45311,
+          "inningsEnd": false,
+          "isWicket": true,
+          "LEDMsg": "Out for Duck!",
+          "bId": "10129"
+        }
+      }
+    }
+  }
+}
