@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 118801,
+      "dispName": "Sanju Samson",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 152.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 118802,
+      "dispName": "Jos Buttler",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 3,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 118803,
+      "dispName": "Yashasvi Jaiswal",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 118804,
+      "dispName": "Riyan Parag",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 118805,
+      "dispName": "Shimron Hetmyer",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 158.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 118806,
+      "dispName": "Dhruv Jurel",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 118807,
+      "dispName": "Ravichandran Ashwin",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 125.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 7.3,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 118808,
+      "dispName": "Trent Boult",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 118809,
+      "dispName": "Yuzvendra Chahal",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 50.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 118810,
+      "dispName": "Sandeep Sharma",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 118811,
+      "dispName": "Avesh Khan",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 75.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 4.0
+      }
+    }
+  ]
+}
