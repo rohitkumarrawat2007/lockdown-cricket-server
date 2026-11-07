@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 137901,
+      "dispName": "Shubman Gill",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 137902,
+      "dispName": "Wriddhiman Saha",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 137903,
+      "dispName": "Sai Sudharsan",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 137904,
+      "dispName": "David Miller",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 137905,
+      "dispName": "Rahul Tewatia",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 137906,
+      "dispName": "Rashid Khan",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 6.8,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 137907,
+      "dispName": "Shahrukh Khan",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 158.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 137908,
+      "dispName": "Mohit Sharma",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 8.1,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 137909,
+      "dispName": "Noor Ahmad",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 60.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 137910,
+      "dispName": "Spencer Johnson",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 137911,
+      "dispName": "Umesh Yadav",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 4.0
+      }
+    }
+  ]
+}
