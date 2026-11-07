@@ -8,6 +8,11 @@ const fs = require('fs');
 const app = express();
 app.use(cors({ origin: '*', credentials: true }));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('🏏 Lockdown Cricket Live Game Server is Running Online!');
+});
+
 app.use((req, res, next) => {
   console.log(`[HTTP ${req.method}] ${req.url}`);
   next();
@@ -161,6 +166,12 @@ if (fs.existsSync(publicDir)) {
 // SOCKET.IO GAME ENGINE (Multiplayer + Anti-Cheat + Zero Leak)
 // ----------------------------------------------------
 const server = http.createServer(app);
+
+app.use('/socket', (req, res, next) => {
+  req.url = '/ldsocket' + req.url;
+  next();
+});
+
 const io = socketIo(server, {
   path: '/ldsocket',
   allowEIO3: true,
@@ -173,23 +184,6 @@ const io = socketIo(server, {
 const waitingQueue = [];
 const activeRooms = new Map(); // roomId -> RoomObject
 
-function normalisePlaying11(playerList) {
-  if (!Array.isArray(playerList)) return [];
-  return [...new Set(playerList.map(Number).filter(Number.isFinite))].slice(0, 11);
-}
-
-function selectedFromPlaying11(room, userId, requested, count) {
-  const player = room.players.find((item) => item.id === userId);
-  const available = (player && player.playing11) || [];
-  const selected = (Array.isArray(requested) ? requested : [requested])
-    .map(Number)
-    .filter((id, index, values) => Number.isFinite(id) && values.indexOf(id) === index);
-  // Old saves can be missing the XI. In that case accept the client choice;
-  // otherwise never silently replace a user's selection with hard-coded IDs.
-  const valid = available.length ? selected.filter((id) => available.includes(id)) : selected;
-  return valid.length === count ? valid : null;
-}
-
 class CricketRoom {
   constructor(roomId, overCount = 2) {
     this.roomId = roomId;
@@ -201,6 +195,7 @@ class CricketRoom {
     this.bowlingUserId = null;
     this.currentInnings = 1;
     this.isMatchEnded = false;
+    this.isInningsTransitionPending = false;
 
     // Innings 1 state
     this.inn1 = { runs: 0, wickets: 0, balls: 0, scorecard: [] };
@@ -274,7 +269,7 @@ io.on('connection', (socket) => {
   });
 
   // 3. Online Matchmaking & Solo
-  function setupRoomWithBot(userTeamId, overs, oppTeamId, playerList) {
+  function setupRoomWithBot(userTeamId, overs, oppTeamId) {
     const roomId = `room_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
     const room = new CricketRoom(roomId, overs || 2);
 
@@ -286,7 +281,6 @@ io.on('connection', (socket) => {
       socketId: socket.id,
       name: userProfile.userName || 'CricketCaptain',
       teamId: userTeamId || 1105,
-      playing11: normalisePlaying11(playerList),
       isBot: false
     });
 
@@ -311,7 +305,7 @@ io.on('connection', (socket) => {
     const userTeamId = (data && data.teamId) || 1105;
     const overs = (data && data.overs) || 2;
 
-    const { room, roomId } = setupRoomWithBot(userTeamId, overs, null, data && data.playerList);
+    const { room, roomId } = setupRoomWithBot(userTeamId, overs);
 
     socket.emit('ANY_ROOM_SUCCESS', { gameID: roomId, status: 1 });
     socket.emit('JOIN_ROOM', { gID: roomId, matchCoins: 200 });
@@ -324,7 +318,7 @@ io.on('connection', (socket) => {
     const oppTeamId = (data && data.oppTeamId) || (userTeamId == 1105 ? 1106 : 1105);
     const overs = (data && data.overs) || 2;
 
-    const { room, roomId } = setupRoomWithBot(userTeamId, overs, oppTeamId, data && data.playerList);
+    const { room, roomId } = setupRoomWithBot(userTeamId, overs, oppTeamId);
 
     socket.emit('JOIN_SUCCESS', {
       gameID: roomId,
@@ -363,7 +357,6 @@ io.on('connection', (socket) => {
       socketId: socket.id,
       name: 'CricketCaptain',
       teamId: data.teamId || 1105,
-      playing11: normalisePlaying11(data.playerList),
       isBot: false
     });
     activeRooms.set(roomId, room);
@@ -418,7 +411,7 @@ io.on('connection', (socket) => {
     const player = room.players.find(p => p.id === currentUserId);
     if (player) {
       if (data.teamId) player.teamId = data.teamId;
-      if (data.playerList) player.playing11 = normalisePlaying11(data.playerList);
+      if (data.playerList) player.playing11 = data.playerList;
     }
 
     console.log(`[Confirm Team] User confirmed team ${player ? player.teamId : ''}. Preparing Toss...`);
@@ -489,15 +482,12 @@ io.on('connection', (socket) => {
   socket.on('OPENING_BATSMAN_SELECTION', (data) => {
     const room = activeRooms.get(socket.roomId);
     if (!room) return;
+    room.isInningsTransitionPending = false;
 
-    const selectedBatsman = selectedFromPlaying11(room, currentUserId, data && data.selectedBatsman, 2);
-    if (!selectedBatsman) {
-      socket.emit('ERROR', { code: 'INVALID_SELECTION', message: 'Please choose two different batsmen from your Playing XI.' });
-      return;
-    }
-    const [b1, b2] = selectedBatsman;
-    const bowlingPlayer = room.players.find((player) => player.id === room.bowlingUserId);
-    const bowlerId = (bowlingPlayer && bowlingPlayer.playing11 && bowlingPlayer.playing11[0]) || 64254;
+    const selectedBatsman = (data && data.selectedBatsman) || [3823, 10129];
+    const b1 = selectedBatsman[0] || 3823;
+    const b2 = selectedBatsman[1] || 10129;
+    const bowlerId = 64254;
 
     room.onStrikeBatsman = b1;
     room.nonStriker = b2;
@@ -517,6 +507,7 @@ io.on('connection', (socket) => {
       },
       isPP: true
     };
+    room.scorecardInnings = room.currentInnings;
 
     console.log(`[Batsman Selection] Strike: ${b1}, Non-Strike: ${b2}, Bowler: ${bowlerId}`);
 
@@ -551,36 +542,41 @@ io.on('connection', (socket) => {
   socket.on('BOWLER_SELECTION', (data) => {
     const room = activeRooms.get(socket.roomId);
     if (!room) return;
+    room.isInningsTransitionPending = false;
 
-    const selectedBowlerArr = selectedFromPlaying11(room, currentUserId, data && data.selectedBowler, 1);
-    if (!selectedBowlerArr) {
-      socket.emit('ERROR', { code: 'INVALID_SELECTION', message: 'Please choose a bowler from your Playing XI.' });
-      return;
-    }
-    const selectedBowler = selectedBowlerArr[0];
+    const selectedBowler = (data && data.selectedBowler) || 64254;
     room.currentBowler = selectedBowler;
 
-    const battingPlayer = room.players.find((player) => player.id === room.battingUserId);
-    const openingPair = (battingPlayer && battingPlayer.playing11 || []).slice(0, 2);
-    const b1 = openingPair[0] || 3823;
-    const b2 = openingPair[1] || 10129;
-    room.onStrikeBatsman = b1;
-    room.nonStriker = b2;
-
-    room.scorecard = {
-      onStrikeBatsman: { player_id: String(b1), Runs: 0, Balls: 0 },
-      nonStriker: { player_id: String(b2), Runs: 0, Balls: 0 },
-      currentBowler: { player_id: String(selectedBowler), Overs: "0.0", Runs: 0, Wickets: 0 },
-      inningsInfo: {
-        Total: 0,
-        Wickets: 0,
-        Balls: 0,
-        last6: [],
+    // Start a fresh scorecard only at the beginning of a new innings.
+    // Selecting a new bowler after an over must preserve the existing innings score.
+    if (!room.scorecard || room.scorecardInnings !== room.currentInnings) {
+      const b1 = 3823;
+      const b2 = 10129;
+      room.onStrikeBatsman = b1;
+      room.nonStriker = b2;
+      room.scorecard = {
+        onStrikeBatsman: { player_id: String(b1), Runs: 0, Balls: 0 },
+        nonStriker: { player_id: String(b2), Runs: 0, Balls: 0 },
+        currentBowler: { player_id: String(selectedBowler), Overs: "0.0", Runs: 0, Wickets: 0 },
+        inningsInfo: {
+          Total: 0,
+          Wickets: 0,
+          Balls: 0,
+          last6: [],
+          Overs: "0.0",
+          maxOvers: room.overCount || 2
+        },
+        isPP: true
+      };
+      room.scorecardInnings = room.currentInnings;
+    } else {
+      room.scorecard.currentBowler = {
+        player_id: String(selectedBowler),
         Overs: "0.0",
-        maxOvers: room.overCount || 2
-      },
-      isPP: true
-    };
+        Runs: 0,
+        Wickets: 0
+      };
+    }
 
     io.to(room.roomId).emit('BOWLER_SELECTED', { scorecard: room.scorecard });
     io.to(room.roomId).emit('BATSMAN_SELECTED', { scorecard: room.scorecard });
@@ -602,12 +598,7 @@ io.on('connection', (socket) => {
     const room = activeRooms.get(socket.roomId);
     if (!room) return;
 
-    const newBatsman = selectedFromPlaying11(room, currentUserId, data && data.selectedBatsman, 1);
-    if (!newBatsman) {
-      socket.emit('ERROR', { code: 'INVALID_SELECTION', message: 'Please choose the next batsman from your Playing XI.' });
-      return;
-    }
-    const newBatsmanId = newBatsman[0];
+    const newBatsmanId = (data && data.selectedBatsman) || 10027;
     console.log(`[New Batsman In] ID: ${newBatsmanId}`);
     if (room.scorecard) {
       room.scorecard.onStrikeBatsman = { player_id: String(newBatsmanId), Runs: 0, Balls: 0 };
@@ -652,8 +643,43 @@ io.on('connection', (socket) => {
     handleBallResolution(room, (data && data.action) || (data && data.shotType) || 'attack');
   });
 
+  function formatOversFromBalls(balls) {
+    const safeBalls = Math.max(0, Number(balls) || 0);
+    return `${Math.floor(safeBalls / 6)}.${safeBalls % 6}`;
+  }
+
+  function updateCurrentInningsSnapshot(room) {
+    if (!room || !room.scorecard || !room.scorecard.inningsInfo) return;
+    const info = room.scorecard.inningsInfo;
+    const key = room.currentInnings === 1 ? 'inn1' : 'inn2';
+    const previous = room[key] || { scorecard: [] };
+    room[key] = {
+      ...previous,
+      runs: Number(info.Total) || 0,
+      wickets: Number(info.Wickets) || 0,
+      balls: Number(info.Balls) || 0,
+      battingUserId: room.battingUserId,
+      // Keep the original array-shaped field used by SCORE_CARD consumers.
+      scorecard: Array.isArray(previous.scorecard) ? previous.scorecard : []
+    };
+  }
+
+  function buildMatchSummary(room) {
+    const summary = {};
+    (room.players || []).forEach((player) => {
+      const inning = [room.inn1, room.inn2].find(item => item && item.battingUserId === player.id);
+      const balls = inning ? Number(inning.balls) || 0 : 0;
+      summary[player.id] = {
+        Total: inning ? Number(inning.runs) || 0 : 0,
+        Wickets: inning ? Number(inning.wickets) || 0 : 0,
+        Overs: formatOversFromBalls(balls)
+      };
+    });
+    return summary;
+  }
+
   function handleBallResolution(room, shotType) {
-    if (!room.scorecard) return;
+    if (!room || room.isMatchEnded || room.isInningsTransitionPending || !room.scorecard || !room.scorecard.inningsInfo) return;
 
     const dice1 = Math.floor(Math.random() * 6) + 1;
     const dice2 = Math.floor(Math.random() * 6) + 1;
@@ -663,7 +689,7 @@ io.on('connection', (socket) => {
     let ledMsg = "";
     let soundId = "";
 
-    if (shotType === 'attack') {
+    if (shotType === 'attack' || shotType === 'loft') {
       const r = Math.random();
       if (r < 0.28) { runs = 4; ledMsg = "FOUR!"; soundId = "four"; }
       else if (r < 0.48) { runs = 6; ledMsg = "Out of the park! SIX!"; soundId = "six"; }
@@ -679,108 +705,237 @@ io.on('connection', (socket) => {
     }
 
     const sc = room.scorecard;
-    sc.inningsInfo.Total += runs;
-    sc.inningsInfo.Balls += 1;
-    if (isWicket) sc.inningsInfo.Wickets += 1;
+    sc.inningsInfo.Total = (Number(sc.inningsInfo.Total) || 0) + runs;
+    sc.inningsInfo.Balls = (Number(sc.inningsInfo.Balls) || 0) + 1;
+    if (isWicket) sc.inningsInfo.Wickets = (Number(sc.inningsInfo.Wickets) || 0) + 1;
 
+    if (!Array.isArray(sc.inningsInfo.last6)) sc.inningsInfo.last6 = [];
     sc.inningsInfo.last6.push(isWicket ? "W" : String(runs));
     if (sc.inningsInfo.last6.length > 6) sc.inningsInfo.last6.shift();
 
     const balls = sc.inningsInfo.Balls;
-    const oversStr = `${Math.floor(balls / 6)}.${balls % 6}`;
+    const oversStr = formatOversFromBalls(balls);
     sc.inningsInfo.Overs = oversStr;
     sc.isPP = balls < 6;
 
-    sc.onStrikeBatsman.Runs += runs;
-    sc.onStrikeBatsman.Balls += 1;
-    sc.currentBowler.Runs += runs;
-    sc.currentBowler.Overs = oversStr;
-    if (isWicket) sc.currentBowler.Wickets += 1;
+    if (sc.onStrikeBatsman) {
+      sc.onStrikeBatsman.Runs = (Number(sc.onStrikeBatsman.Runs) || 0) + runs;
+      sc.onStrikeBatsman.Balls = (Number(sc.onStrikeBatsman.Balls) || 0) + 1;
+    }
+    if (sc.currentBowler) {
+      sc.currentBowler.Runs = (Number(sc.currentBowler.Runs) || 0) + runs;
+      sc.currentBowler.Overs = oversStr;
+      if (isWicket) sc.currentBowler.Wickets = (Number(sc.currentBowler.Wickets) || 0) + 1;
+    }
 
-    if (runs % 2 === 1) {
+    if (runs % 2 === 1 && sc.onStrikeBatsman && sc.nonStriker) {
       const temp = sc.onStrikeBatsman;
       sc.onStrikeBatsman = sc.nonStriker;
       sc.nonStriker = temp;
     }
 
-    console.log(`[Ball ${balls}] Shot: ${shotType}, Runs: ${runs}, Wickets: ${sc.inningsInfo.Wickets}, Total: ${sc.inningsInfo.Total}/${sc.inningsInfo.Wickets}, Sound: ${soundId}`);
+    updateCurrentInningsSnapshot(room);
+    const firstInningsRuns = Number(room.inn1 && room.inn1.runs) || 0;
+    const targetReached = room.currentInnings === 2 && sc.inningsInfo.Total > firstInningsRuns;
+    const inningsComplete = balls >= room.maxBalls || sc.inningsInfo.Wickets >= 10 || targetReached;
+
+    console.log(`[Innings ${room.currentInnings} | Ball ${balls}] Shot: ${shotType}, Runs: ${runs}, Wickets: ${sc.inningsInfo.Wickets}, Total: ${sc.inningsInfo.Total}/${sc.inningsInfo.Wickets}, Sound: ${soundId}`);
 
     io.to(room.roomId).emit('ON_PLAY_SHOT', {
       dices: { dice1, dice2 },
       scorecard: sc,
       eventID: Date.now(),
-      inningsEnd: balls >= room.maxBalls,
+      inningsEnd: inningsComplete,
       LEDMsg: ledMsg,
       isWicket: isWicket,
       soundId: soundId
     });
 
-    if (balls < room.maxBalls && sc.inningsInfo.Wickets < 10) {
-      if (!isWicket) {
-        setTimeout(() => {
-          if (balls % 6 === 0) {
-            io.to(room.roomId).emit('START_OVER', {
-              grid: tutsData.bat.simulation["1"].START_OVER.grid,
-              OD: tutsData.bat.simulation["1"].START_OVER.OD,
-              BD: tutsData.bat.simulation["1"].START_OVER.BD,
-              newBowlerId: String(room.currentBowler),
-              scorecard: sc,
-              eventID: Date.now()
-            });
-          } else {
-            io.to(room.roomId).emit('START_BALL', { eventID: Date.now() });
-          }
+    if (inningsComplete) {
+      room.isInningsTransitionPending = true;
+      setTimeout(() => {
+        if (room.isMatchEnded) return;
+        updateCurrentInningsSnapshot(room);
 
+        if (room.currentInnings === 1) {
+          // Preserve innings 1 and swap batting/bowling roles for innings 2.
+          room.currentInnings = 2;
+          const previousBattingUserId = room.battingUserId;
+          room.battingUserId = room.bowlingUserId;
+          room.bowlingUserId = previousBattingUserId;
+
+          io.to(room.roomId).emit('SWITCH_INNINGS', {
+            scorecard: {
+              Total: Number(room.inn1.runs) || 0,
+              Wickets: Number(room.inn1.wickets) || 0,
+              Overs: formatOversFromBalls(room.inn1.balls)
+            },
+            newInnings: { AllottedOvers: room.overCount },
+            topPerformers: { bat: [], bowl: [] },
+            soundId: "innings_end",
+            eventID: Date.now()
+          });
+          // Selection handlers clear this flag when the player continues into innings 2.
+          return;
+        }
+
+        // Innings 2 ended (allotted balls/wickets or target chased): calculate the real result.
+        room.inn2 = {
+          ...room.inn2,
+          runs: Number(sc.inningsInfo.Total) || 0,
+          wickets: Number(sc.inningsInfo.Wickets) || 0,
+          balls: Number(sc.inningsInfo.Balls) || 0,
+          battingUserId: room.battingUserId,
+          scorecard: Array.isArray(room.inn2.scorecard) ? room.inn2.scorecard : []
+        };
+        const firstRuns = Number(room.inn1.runs) || 0;
+        const secondRuns = Number(room.inn2.runs) || 0;
+        let winnerId = null;
+        let isTie = false;
+        let winningEq = { runs: 0, wickets: 0, balls: 0 };
+
+        if (secondRuns > firstRuns) {
+          winnerId = room.inn2.battingUserId;
+          winningEq = {
+            runs: 0,
+            wickets: Math.max(0, 10 - (Number(room.inn2.wickets) || 0)),
+            balls: Math.max(0, room.maxBalls - (Number(room.inn2.balls) || 0))
+          };
+        } else if (firstRuns > secondRuns) {
+          winnerId = room.inn1.battingUserId;
+          winningEq = { runs: firstRuns - secondRuns, wickets: 0, balls: 0 };
+        } else {
+          isTie = true;
+        }
+
+        endMatch(room, winnerId, isTie ? "Match tied." : "Match Completed!", {
+          isTie,
+          summary: buildMatchSummary(room),
+          topPerformers: { bat: [], bowl: [] },
+          winningEq
+        });
+      }, 3500);
+      return;
+    }
+
+    // A human batter receives the next delivery from the bot. If the human is bowling,
+    // wait for their BowlerView selection instead of inventing a delivery for them.
+    if (!isWicket) {
+      setTimeout(() => {
+        if (room.isMatchEnded || room.isInningsTransitionPending) return;
+        const bowlingPlayer = (room.players || []).find(player => player.id === room.bowlingUserId);
+
+        if (balls % 6 === 0 && bowlingPlayer && !bowlingPlayer.isBot) {
+          // The human bowler must be allowed to select the next bowler.
+          io.to(room.roomId).emit('END_OVER', { scorecard: sc, eventID: Date.now() });
+          return;
+        }
+
+        if (balls % 6 === 0) {
+          const overData = bowlingPlayer && bowlingPlayer.isBot
+            ? tutsData.bat.simulation["1"].START_OVER
+            : tutsData.bowl.simulation["1"].START_OVER;
+          io.to(room.roomId).emit('START_OVER', {
+            grid: overData.grid,
+            OD: overData.OD,
+            BD: overData.BD,
+            newBowlerId: String(room.currentBowler),
+            scorecard: sc,
+            eventID: Date.now()
+          });
+        } else {
+          io.to(room.roomId).emit('START_BALL', { eventID: Date.now(), scorecard: sc });
+        }
+
+        if (bowlingPlayer && bowlingPlayer.isBot) {
           setTimeout(() => {
-            const nextCard = Math.floor(Math.random() * 6);
-            io.to(room.roomId).emit('ON_BOWL', {
-              cardIndex: nextCard,
-              eventID: Date.now()
-            });
+            if (!room.isMatchEnded && !room.isInningsTransitionPending) {
+              const nextCard = Math.floor(Math.random() * 6);
+              io.to(room.roomId).emit('ON_BOWL', {
+                cardIndex: nextCard,
+                eventID: Date.now()
+              });
+            }
           }, 1800);
+        }
+      }, 3500);
+    } else {
+      // When the opponent is a bot, it cannot send SELECT_NEW_BATSMAN itself.
+      // Resume that innings automatically after a wicket so a local bot match cannot stall.
+      const battingPlayer = (room.players || []).find(player => player.id === room.battingUserId);
+      if (battingPlayer && battingPlayer.isBot) {
+        setTimeout(() => {
+          if (room.isMatchEnded || room.isInningsTransitionPending || !room.scorecard) return;
+          const replacementId = 10027 + (Number(room.scorecard.inningsInfo.Wickets) || 0);
+          room.scorecard.onStrikeBatsman = { player_id: String(replacementId), Runs: 0, Balls: 0 };
+          io.to(room.roomId).emit('BATSMAN_SELECTED', { scorecard: room.scorecard });
+          const bowlingPlayer = (room.players || []).find(player => player.id === room.bowlingUserId);
+          if (balls % 6 === 0 && bowlingPlayer && !bowlingPlayer.isBot) {
+            io.to(room.roomId).emit('END_OVER', { scorecard: room.scorecard, eventID: Date.now() });
+          } else {
+            io.to(room.roomId).emit('START_BALL', { eventID: Date.now(), scorecard: room.scorecard });
+          }
         }, 3500);
       }
-    } else {
-      setTimeout(() => {
-        endMatch(room, currentUserId, "Match Completed!");
-      }, 3500);
     }
   }
 
-  function endMatch(room, winnerId, reason) {
-    if (room.isMatchEnded) return;
+  function endMatch(room, winnerId, reason, resultData = {}) {
+    if (!room || room.isMatchEnded) return;
     room.isMatchEnded = true;
 
-    const winner = room.players.find(p => p.id === winnerId);
-    const loser = room.players.find(p => p.id !== winnerId);
-
+    const isTie = Boolean(resultData.isTie);
+    const winner = winnerId ? room.players.find(p => p.id === winnerId) : null;
+    const loser = winner && room.players.find(p => p.id !== winner.id);
     const coinsWon = 380;
     const coinsLost = 200;
 
-    if (winner && !winner.isBot) {
-      const wProfile = userProfiles.get(winner.id);
-      if (wProfile) {
-        wProfile.totalCoins += 180;
-        wProfile.totalWin += 1;
-        wProfile.totalGames += 1;
+    if (isTie) {
+      (room.players || []).forEach((player) => {
+        if (player.isBot) return;
+        const profile = userProfiles.get(player.id);
+        if (profile) {
+          profile.totalTie = (Number(profile.totalTie) || 0) + 1;
+          profile.totalGames = (Number(profile.totalGames) || 0) + 1;
+        }
+      });
+    } else {
+      if (winner && !winner.isBot) {
+        const wProfile = userProfiles.get(winner.id);
+        if (wProfile) {
+          wProfile.totalCoins += 180;
+          wProfile.totalWin += 1;
+          wProfile.totalGames += 1;
+        }
       }
-    }
-    if (loser && !loser.isBot) {
-      const lProfile = userProfiles.get(loser.id);
-      if (lProfile) {
-        lProfile.totalCoins = Math.max(0, lProfile.totalCoins - 200);
-        lProfile.totalLoss += 1;
-        lProfile.totalGames += 1;
+      if (loser && !loser.isBot) {
+        const lProfile = userProfiles.get(loser.id);
+        if (lProfile) {
+          lProfile.totalCoins = Math.max(0, lProfile.totalCoins - 200);
+          lProfile.totalLoss += 1;
+          lProfile.totalGames += 1;
+        }
       }
     }
 
+    const summary = resultData.summary || buildMatchSummary(room);
+    const winningEq = resultData.winningEq || {
+      runs: Math.max(0, (Number(room.inn1 && room.inn1.runs) || 0) - (Number(room.inn2 && room.inn2.runs) || 0)),
+      wickets: 0,
+      balls: 0
+    };
+
     io.to(room.roomId).emit('MATCH_END', {
-      winningUserId: winnerId,
+      winningUserId: winner ? winner.id : null,
       winningTeamId: winner ? winner.teamId : null,
-      coinsWon: coinsWon,
-      coinsLost: coinsLost,
+      coinsWon: isTie ? 0 : coinsWon,
+      coinsLost: isTie ? 0 : coinsLost,
       reason: reason,
-      soundId: "victory"
+      soundId: isTie ? "tie" : "victory",
+      isTie,
+      summary,
+      topPerformers: resultData.topPerformers || { bat: [], bowl: [] },
+      winningEq
     });
 
     setTimeout(() => {
