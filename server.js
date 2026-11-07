@@ -185,10 +185,12 @@ const waitingQueue = [];
 const activeRooms = new Map(); // roomId -> RoomObject
 
 class CricketRoom {
-  constructor(roomId, overCount = 2) {
+  constructor(roomId, overCount = 5) {
     this.roomId = roomId;
-    this.overCount = overCount;
-    this.maxBalls = overCount * 6;
+    const effOvers = Number(overCount) || 5;
+    this.overCount = effOvers;
+    this.maxBalls = effOvers * 6;
+    this.maxWickets = (effOvers === 1) ? 2 : 10;
     this.players = []; // [{ id, socketId, name, teamId, playing11, isBot }]
     this.tossWinner = null;
     this.battingUserId = null;
@@ -303,7 +305,7 @@ io.on('connection', (socket) => {
   socket.on('JOIN_ANY_ROOM', (data) => {
     console.log(`[Matchmaking] User ${currentUserId} searching for match...`);
     const userTeamId = (data && data.teamId) || 1105;
-    const overs = (data && data.overs) || 2;
+    const overs = extractOvers(data);
 
     const { room, roomId } = setupRoomWithBot(userTeamId, overs);
 
@@ -316,7 +318,7 @@ io.on('connection', (socket) => {
     console.log(`[Solo] User ${currentUserId} starting solo match...`);
     const userTeamId = (data && data.teamId) || 1105;
     const oppTeamId = (data && data.oppTeamId) || (userTeamId == 1105 ? 1106 : 1105);
-    const overs = (data && data.overs) || 2;
+    const overs = extractOvers(data);
 
     const { room, roomId } = setupRoomWithBot(userTeamId, overs, oppTeamId);
 
@@ -351,7 +353,7 @@ io.on('connection', (socket) => {
   // 4. Friend Room Creation
   socket.on('CREATE_ROOM', (data) => {
     const roomId = `room_${Math.floor(100000 + Math.random() * 900000)}`;
-    const room = new CricketRoom(roomId, data.overs || 2);
+    const room = new CricketRoom(roomId, extractOvers(data));
     room.players.push({
       id: currentUserId,
       socketId: socket.id,
@@ -737,7 +739,7 @@ io.on('connection', (socket) => {
     updateCurrentInningsSnapshot(room);
     const firstInningsRuns = Number(room.inn1 && room.inn1.runs) || 0;
     const targetReached = room.currentInnings === 2 && sc.inningsInfo.Total > firstInningsRuns;
-    const inningsComplete = balls >= room.maxBalls || sc.inningsInfo.Wickets >= 10 || targetReached;
+    const inningsComplete = balls >= room.maxBalls || sc.inningsInfo.Wickets >= (room.maxWickets || 10) || targetReached;
 
     console.log(`[Innings ${room.currentInnings} | Ball ${balls}] Shot: ${shotType}, Runs: ${runs}, Wickets: ${sc.inningsInfo.Wickets}, Total: ${sc.inningsInfo.Total}/${sc.inningsInfo.Wickets}, Sound: ${soundId}`);
 
