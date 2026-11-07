@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 401,
+      "dispName": "Quinton de Kock",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 402,
+      "dispName": "Reeza Hendricks",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 403,
+      "dispName": "Aiden Markram",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 7.5,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 404,
+      "dispName": "Heinrich Klaasen",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 4,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 170.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 405,
+      "dispName": "David Miller",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 406,
+      "dispName": "Tristan Stubbs",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 407,
+      "dispName": "Marco Jansen",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 408,
+      "dispName": "Keshav Maharaj",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 6.9,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 409,
+      "dispName": "Kagiso Rabada",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 95.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 410,
+      "dispName": "Anrich Nortje",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 65.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 411,
+      "dispName": "Tabraiz Shamsi",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 50.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.0
+      }
+    }
+  ]
+}
