@@ -201,8 +201,9 @@ class CricketRoom {
 
     // Innings 1 state
     this.inn1 = { runs: 0, wickets: 0, balls: 0, scorecard: [] };
-    // Innings 2 state
     this.inn2 = { runs: 0, wickets: 0, balls: 0, scorecard: [] };
+    this.dismissedBatsmenInn1 = new Set();
+    this.dismissedBatsmenInn2 = new Set();
 
     this.currentBowler = null;
     this.currentBatsman = null;
@@ -598,13 +599,36 @@ io.on('connection', (socket) => {
   // 8d. New Batsman Selection after Wicket
   socket.on('SELECT_NEW_BATSMAN', (data) => {
     const room = activeRooms.get(socket.roomId);
-    if (!room) return;
+    if (!room || !room.scorecard) return;
 
-    const newBatsmanId = (data && data.selectedBatsman) || 10027;
-    console.log(`[New Batsman In] ID: ${newBatsmanId}`);
-    if (room.scorecard) {
-      room.scorecard.onStrikeBatsman = { player_id: String(newBatsmanId), Runs: 0, Balls: 0 };
+    const dismissed = room.currentInnings === 1 ? room.dismissedBatsmenInn1 : room.dismissedBatsmenInn2;
+    const battingPlayer = room.players.find(p => p.id === room.battingUserId) || room.players[0];
+    const playing11 = (battingPlayer && battingPlayer.playing11) || [];
+    const nonStrikerId = room.scorecard.nonStriker ? String(room.scorecard.nonStriker.player_id) : null;
+
+    // Filter available batsmen: must be in playing11, NOT dismissed, and NOT currently non-striker
+    const available = playing11.filter(pid => {
+      const sId = String(pid);
+      return !dismissed.has(sId) && sId !== nonStrikerId;
+    });
+
+    let chosenId = data && data.selectedBatsman ? String(data.selectedBatsman) : null;
+    if (!chosenId || dismissed.has(chosenId) || chosenId === nonStrikerId || !playing11.map(String).includes(chosenId)) {
+      chosenId = available.length > 0 ? String(available[0]) : (playing11[2] ? String(playing11[2]) : "1002");
     }
+
+    console.log(`[New Batsman In] Validated ID: ${chosenId} (Dismissed count: ${dismissed.size})`);
+    room.scorecard.onStrikeBatsman = { player_id: chosenId, Runs: 0, Balls: 0 };
+
+    // Update or add in batsc array
+    if (Array.isArray(room.scorecard.batsc)) {
+      let bRec = room.scorecard.batsc.find(b => String(b.id) === chosenId);
+      if (!bRec) {
+        bRec = { id: Number(chosenId) || chosenId, R: 0, B: 0, '4': 0, '6': 0, SR: "0.0", Howout: "", isOut: false };
+        room.scorecard.batsc.push(bRec);
+      }
+    }
+
     io.to(room.roomId).emit('BATSMAN_SELECTED', { scorecard: room.scorecard });
     io.to(room.roomId).emit('START_BALL', { eventID: Date.now() });
 
@@ -723,6 +747,28 @@ io.on('connection', (socket) => {
     if (sc.onStrikeBatsman) {
       sc.onStrikeBatsman.Runs = (Number(sc.onStrikeBatsman.Runs) || 0) + runs;
       sc.onStrikeBatsman.Balls = (Number(sc.onStrikeBatsman.Balls) || 0) + 1;
+      
+      const sStrikerId = String(sc.onStrikeBatsman.player_id);
+      if (Array.isArray(sc.batsc)) {
+        let bRec = sc.batsc.find(b => String(b.id) === sStrikerId);
+        if (bRec) {
+          bRec.R = (Number(bRec.R) || 0) + runs;
+          bRec.B = (Number(bRec.B) || 0) + 1;
+          if (runs === 4) bRec['4'] = (Number(bRec['4']) || 0) + 1;
+          if (runs === 6) bRec['6'] = (Number(bRec['6']) || 0) + 1;
+          bRec.SR = bRec.B > 0 ? ((bRec.R / bRec.B) * 100).toFixed(1) : "0.0";
+          if (isWicket) {
+            bRec.isOut = true;
+            bRec.Howout = "b " + ((sc.currentBowler && sc.currentBowler.player_id) || "Bowler");
+          }
+        }
+      }
+
+      if (isWicket) {
+        const dismissed = room.currentInnings === 1 ? room.dismissedBatsmenInn1 : room.dismissedBatsmenInn2;
+        dismissed.add(sStrikerId);
+        console.log(`[Wicket] Player ${sStrikerId} marked OUT permanently. Total outs: ${dismissed.size}`);
+      }
     }
     if (sc.currentBowler) {
       sc.currentBowler.Runs = (Number(sc.currentBowler.Runs) || 0) + runs;
@@ -730,7 +776,14 @@ io.on('connection', (socket) => {
       if (isWicket) sc.currentBowler.Wickets = (Number(sc.currentBowler.Wickets) || 0) + 1;
     }
 
+    // Odd runs strike swap
     if (runs % 2 === 1 && sc.onStrikeBatsman && sc.nonStriker) {
+      const temp = sc.onStrikeBatsman;
+      sc.onStrikeBatsman = sc.nonStriker;
+      sc.nonStriker = temp;
+    }
+    // Over end strike swap (Ball 6 ends swap)
+    if (balls % 6 === 0 && !isWicket && sc.onStrikeBatsman && sc.nonStriker) {
       const temp = sc.onStrikeBatsman;
       sc.onStrikeBatsman = sc.nonStriker;
       sc.nonStriker = temp;
