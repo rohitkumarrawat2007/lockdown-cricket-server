@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 110501,
+      "dispName": "MS Dhoni",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110502,
+      "dispName": "Ruturaj Gaikwad",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110503,
+      "dispName": "Ravindra Jadeja",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 136.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110504,
+      "dispName": "Shivam Dube",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 162.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.1,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 110505,
+      "dispName": "Deepak Chahar",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 110.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110506,
+      "dispName": "Matheesha Pathirana",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 9,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110507,
+      "dispName": "Moeen Ali",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110508,
+      "dispName": "Ajinkya Rahane",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110509,
+      "dispName": "Tushar Deshpande",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 8.8,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110510,
+      "dispName": "Shardul Thakur",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 8.9,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110511,
+      "dispName": "Daryl Mitchell",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 3.5
+      }
+    }
+  ]
+}
