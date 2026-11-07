@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 301,
+      "dispName": "Jos Buttler",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 302,
+      "dispName": "Phil Salt",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 303,
+      "dispName": "Jonny Bairstow",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 304,
+      "dispName": "Harry Brook",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.8,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 305,
+      "dispName": "Moeen Ali",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.7,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 306,
+      "dispName": "Liam Livingstone",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 307,
+      "dispName": "Sam Curran",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 308,
+      "dispName": "Chris Jordan",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 3,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 125.0,
+        "rating": 3.0
+      },
+      "bowlingStats": {
+        "eco": 8.6,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 309,
+      "dispName": "Jofra Archer",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 120.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 7.3,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 310,
+      "dispName": "Adil Rashid",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.1,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 311,
+      "dispName": "Mark Wood",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.5
+      }
+    }
+  ]
+}
