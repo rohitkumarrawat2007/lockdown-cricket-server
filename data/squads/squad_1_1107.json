@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 110701,
+      "dispName": "Virat Kohli",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110702,
+      "dispName": "Faf du Plessis",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 144.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110703,
+      "dispName": "Glenn Maxwell",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110704,
+      "dispName": "Mohammed Siraj",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 85.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.9,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110705,
+      "dispName": "Dinesh Karthik",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 168.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110706,
+      "dispName": "Rajat Patidar",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110707,
+      "dispName": "Cameron Green",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 110708,
+      "dispName": "Yash Dayal",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 75.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 110709,
+      "dispName": "Lockie Ferguson",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 95.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110710,
+      "dispName": "Karn Sharma",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 110.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 8.7,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 110711,
+      "dispName": "Will Jacks",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 3,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 3.0
+      }
+    }
+  ]
+}
