@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 601,
+      "dispName": "Babar Azam",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 6,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 136.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 602,
+      "dispName": "Mohammad Rizwan",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 6,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 603,
+      "dispName": "Fakhar Zaman",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 6,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 604,
+      "dispName": "Saim Ayub",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 6,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 605,
+      "dispName": "Iftikhar Ahmed",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 6,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.9,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 606,
+      "dispName": "Shadab Khan",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 6,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 607,
+      "dispName": "Imad Wasim",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 6,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 6.9,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 608,
+      "dispName": "Shaheen Afridi",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 6,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 125.0,
+        "rating": 3.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 609,
+      "dispName": "Naseem Shah",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 6,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 100.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 610,
+      "dispName": "Haris Rauf",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 6,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 611,
+      "dispName": "Mohammad Amir",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 6,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 85.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.1,
+        "rating": 4.5
+      }
+    }
+  ]
+}
