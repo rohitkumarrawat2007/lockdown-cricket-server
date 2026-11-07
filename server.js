@@ -272,7 +272,15 @@ io.on('connection', (socket) => {
   });
 
   // 3. Online Matchmaking & Solo
-  function setupRoomWithBot(userTeamId, overs, oppTeamId) {
+  
+function extractOvers(data) {
+  if (!data) return 2;
+  const val = (typeof data === 'object') ? (data.overs || data.userSelectedOver || data.overCount || data.selectedOvers || data.over) : data;
+  const num = parseInt(val, 10);
+  return (!isNaN(num) && num > 0) ? num : 2;
+}
+
+function setupRoomWithBot(userTeamId, overs, oppTeamId) {
     const roomId = `room_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
     const room = new CricketRoom(roomId, overs || 2);
 
