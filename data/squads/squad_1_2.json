@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 201,
+      "dispName": "Travis Head",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 202,
+      "dispName": "David Warner",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 203,
+      "dispName": "Mitchell Marsh",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 204,
+      "dispName": "Glenn Maxwell",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 205,
+      "dispName": "Marcus Stoinis",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.3,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 206,
+      "dispName": "Tim David",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 168.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 207,
+      "dispName": "Matthew Wade",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 208,
+      "dispName": "Pat Cummins",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 2,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 7.5,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 209,
+      "dispName": "Mitchell Starc",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 115.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 210,
+      "dispName": "Adam Zampa",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 60.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.1,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 211,
+      "dispName": "Josh Hazlewood",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 55.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.0,
+        "rating": 5.0
+      }
+    }
+  ]
+}
