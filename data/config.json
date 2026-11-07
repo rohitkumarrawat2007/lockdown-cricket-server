@@ -1,0 +1,1307 @@
+{
+  "Value": {
+    "Config": {
+      "diceMaxSide": 6,
+      "diceClass": {
+        "1": " si-dice-one ",
+        "2": " si-dice-two ",
+        "3": " si-dice-three ",
+        "4": " si-dice-four ",
+        "5": " si-dice-five ",
+        "6": " si-dice-six "
+      },
+      "playerVisibility": {
+        "show": 1,
+        "hide": 2,
+        "neutral": 3
+      },
+      "updateVisibilityTimeout": 20,
+      "playerToggleTimeout": 1000,
+      "scoreObj": {
+        "-2": {
+          "val": "W",
+          "subtext": "",
+          "plotClass": "si-wicket",
+          "icon": "skull-icon",
+          "useLastPosition": true
+        },
+        "0": {
+          "val": "0",
+          "subtext": "RUNS",
+          "plotClass": "si-runs"
+        },
+        "1": {
+          "val": "1",
+          "subtext": "RUN",
+          "plotClass": "si-runs"
+        },
+        "2": {
+          "val": "2",
+          "subtext": "RUNS",
+          "plotClass": "si-runs"
+        },
+        "3": {
+          "val": "3",
+          "subtext": "RUNS",
+          "plotClass": "si-runs"
+        },
+        "4": {
+          "val": "4",
+          "subtext": "RUNS",
+          "plotClass": "si-fourSix",
+          "useLastPosition": true
+        },
+        "6": {
+          "val": "6",
+          "subtext": "RUNS",
+          "plotClass": "si-fourSix",
+          "useLastPosition": true
+        },
+        "w": {
+          "val": "W",
+          "subtext": "",
+          "plotClass": "si-wicket",
+          "icon": "skull-icon",
+          "useLastPosition": true
+        },
+        "wide": {
+          "val": "WD",
+          "subtext": "",
+          "plotClass": "si-extra-runs"
+        },
+        "no ball": {
+          "val": "NB",
+          "subtext": "",
+          "plotClass": "si-extra-runs"
+        },
+        "leg bye": {
+          "val": "LB",
+          "subtext": "",
+          "plotClass": "si-extra-runs"
+        }
+      },
+      "ballClass": {
+        "4": "si-fourSix",
+        "6": "si-fourSix",
+        "W": "si-wicket"
+      },
+      "ballOrigin": {
+        "l": 0.5,
+        "t": 0.27
+      },
+      "pitchPosition": {
+        "t": 0.25,
+        "h": 0.5
+      },
+      "ballAnimationDuration": 1,
+      "fieldSlotHighlightDuration": 2,
+      "formations": [
+        [
+          {
+            "l": 0.64,
+            "t": 0.38
+          },
+          {
+            "l": 0.67,
+            "t": 0.33
+          },
+          {
+            "l": 0.7,
+            "t": 0.27
+          }
+        ],
+        [
+          {
+            "l": 0.67,
+            "t": 0.52
+          },
+          {
+            "l": 0.7,
+            "t": 0.52
+          },
+          {
+            "l": 0.73,
+            "t": 0.52
+          }
+        ],
+        [
+          {
+            "l": 0.7,
+            "t": 0.87
+          },
+          {
+            "l": 0.72,
+            "t": 0.9
+          },
+          {
+            "l": 0.75,
+            "t": 0.93
+          }
+        ],
+        [
+          {
+            "l": 0.4,
+            "t": 0.87
+          },
+          {
+            "l": 0.38,
+            "t": 0.9
+          },
+          {
+            "l": 0.35,
+            "t": 0.93
+          }
+        ],
+        [
+          {
+            "l": 0.38,
+            "t": 0.52
+          },
+          {
+            "l": 0.34,
+            "t": 0.52
+          },
+          {
+            "l": 0.31,
+            "t": 0.52
+          }
+        ],
+        [
+          {
+            "l": 0.44,
+            "t": 0.38
+          },
+          {
+            "l": 0.41,
+            "t": 0.33
+          },
+          {
+            "l": 0.39,
+            "t": 0.27
+          }
+        ],
+        [
+          {
+            "l": 0.81,
+            "t": 0.34
+          },
+          {
+            "l": 0.83,
+            "t": 0.31
+          },
+          {
+            "l": 0.85,
+            "t": 0.28
+          }
+        ],
+        [
+          {
+            "l": 0.93,
+            "t": 0.6
+          },
+          {
+            "l": 0.95,
+            "t": 0.6
+          },
+          {
+            "l": 0.98,
+            "t": 0.6
+          }
+        ],
+        [
+          {
+            "l": 0.88,
+            "t": 0.9
+          },
+          {
+            "l": 0.91,
+            "t": 0.95
+          },
+          {
+            "l": 0.95,
+            "t": 1.0
+          }
+        ],
+        [
+          {
+            "l": 0.21,
+            "t": 0.9
+          },
+          {
+            "l": 0.18,
+            "t": 0.95
+          },
+          {
+            "l": 0.15,
+            "t": 0.98
+          }
+        ],
+        [
+          {
+            "l": 0.15,
+            "t": 0.6
+          },
+          {
+            "l": 0.12,
+            "t": 0.6
+          },
+          {
+            "l": 0.1,
+            "t": 0.6
+          }
+        ],
+        [
+          {
+            "l": 0.27,
+            "t": 0.34
+          },
+          {
+            "l": 0.25,
+            "t": 0.31
+          },
+          {
+            "l": 0.23,
+            "t": 0.28
+          }
+        ]
+      ],
+      "deviceFormations": [
+        [
+          {
+            "l": 0.64,
+            "t": 0.38
+          },
+          {
+            "l": 0.66,
+            "t": 0.34
+          },
+          {
+            "l": 0.68,
+            "t": 0.31
+          }
+        ],
+        [
+          {
+            "l": 0.69,
+            "t": 0.63
+          },
+          {
+            "l": 0.71,
+            "t": 0.62
+          },
+          {
+            "l": 0.73,
+            "t": 0.62
+          }
+        ],
+        [
+          {
+            "l": 0.7,
+            "t": 0.91
+          },
+          {
+            "l": 0.72,
+            "t": 0.93
+          },
+          {
+            "l": 0.75,
+            "t": 0.95
+          }
+        ],
+        [
+          {
+            "l": 0.4,
+            "t": 0.91
+          },
+          {
+            "l": 0.38,
+            "t": 0.93
+          },
+          {
+            "l": 0.35,
+            "t": 0.95
+          }
+        ],
+        [
+          {
+            "l": 0.38,
+            "t": 0.59
+          },
+          {
+            "l": 0.34,
+            "t": 0.59
+          },
+          {
+            "l": 0.31,
+            "t": 0.59
+          }
+        ],
+        [
+          {
+            "l": 0.46,
+            "t": 0.38
+          },
+          {
+            "l": 0.44,
+            "t": 0.34
+          },
+          {
+            "l": 0.42,
+            "t": 0.31
+          }
+        ],
+        [
+          {
+            "l": 0.81,
+            "t": 0.38
+          },
+          {
+            "l": 0.83,
+            "t": 0.34
+          },
+          {
+            "l": 0.85,
+            "t": 0.3
+          }
+        ],
+        [
+          {
+            "l": 0.93,
+            "t": 0.55
+          },
+          {
+            "l": 0.95,
+            "t": 0.55
+          },
+          {
+            "l": 0.98,
+            "t": 0.55
+          }
+        ],
+        [
+          {
+            "l": 0.86,
+            "t": 0.88
+          },
+          {
+            "l": 0.89,
+            "t": 0.9
+          },
+          {
+            "l": 0.92,
+            "t": 0.92
+          }
+        ],
+        [
+          {
+            "l": 0.19,
+            "t": 0.88
+          },
+          {
+            "l": 0.16,
+            "t": 0.9
+          },
+          {
+            "l": 0.13,
+            "t": 0.92
+          }
+        ],
+        [
+          {
+            "l": 0.15,
+            "t": 0.55
+          },
+          {
+            "l": 0.12,
+            "t": 0.55
+          },
+          {
+            "l": 0.1,
+            "t": 0.55
+          }
+        ],
+        [
+          {
+            "l": 0.27,
+            "t": 0.38
+          },
+          {
+            "l": 0.25,
+            "t": 0.34
+          },
+          {
+            "l": 0.23,
+            "t": 0.3
+          }
+        ]
+      ],
+      "userView": {
+        "fielding": 1,
+        "batting": 2
+      },
+      "cardIntensity": {
+        "default": {
+          "iClass": "si-cardSix",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "1": {
+          "iClass": "si-cardSix",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "2": {
+          "iClass": "si-cardFive",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "3": {
+          "iClass": "si-cardFour",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "4": {
+          "iClass": "si-cardThree",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "5": {
+          "iClass": "si-cardTwo",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        },
+        "6": {
+          "iClass": "si-cardOne",
+          "cardFrontIcon": "helmet-icon",
+          "cardBackIcon": "short-ball"
+        }
+      },
+      "diceConfig": {
+        "1": {
+          "pos": "si-back",
+          "val": "si-dice-one"
+        },
+        "2": {
+          "pos": "si-left",
+          "val": "si-dice-two"
+        },
+        "3": {
+          "pos": "si-top",
+          "val": "si-dice-three"
+        },
+        "4": {
+          "pos": "si-bottom",
+          "val": "si-dice-four"
+        },
+        "5": {
+          "pos": "si-right",
+          "val": "si-dice-five"
+        },
+        "6": {
+          "pos": "si-front",
+          "val": "si-dice-six"
+        }
+      },
+      "wicketKey": {
+        "caughtAndBowledKey": "c & b",
+        "runOutKey": "run out",
+        "bowledKey": "b"
+      },
+      "plyrSkills": {
+        "bat": 1,
+        "bowl": 2,
+        "ar": 3,
+        "wk": 4
+      },
+      "skillPlyrClass": {
+        "1": "si-bt",
+        "2": "si-bl",
+        "3": "si-ar",
+        "4": "si-wk"
+      },
+      "eventOverlayConfig": {
+        "four": {
+          "popupTitle": "4",
+          "popupMsg": "Runs",
+          "popupClass": "si-fourSix"
+        },
+        "six": {
+          "popupTitle": "6",
+          "popupMsg": "Runs",
+          "popupClass": "si-fourSix"
+        },
+        "out": {
+          "popupTitle": "W",
+          "popupMsg": "Out",
+          "popupClass": "si-wicket"
+        }
+      },
+      "eventTimeout": 4000,
+      "gotLifeTimeout": 4000,
+      "selectNextBowlerTimeout": 2000,
+      "forfeitWarningToastTimeout": 20000,
+      "userTurnTimeout": 20,
+      "oppTurnBufferTimeout": 30,
+      "timeupBufferTimeout": 50,
+      "oppDisconnectedTimeout": 60,
+      "showBatsmanAnimation": false,
+      "reConnectCtr": 5,
+      "oppTimerStatus": {
+        "noTime": 0,
+        "turnTime": 1,
+        "extraTime": 2
+      },
+      "coinValue": {
+        "heads": 1,
+        "tails": 2,
+        "bat": 3,
+        "bowl": 4
+      },
+      "audioTypes": {
+        "background": "background",
+        "gameEvent": "gameEvent",
+        "ambience": "ambience"
+      },
+      "audioActions": {
+        "play": "play",
+        "pause": "pause",
+        "stop": "stop"
+      },
+      "diceNum": {
+        "1": "si-one",
+        "2": "si-two",
+        "3": "si-three",
+        "4": "si-four",
+        "5": "si-five",
+        "6": "si-six"
+      },
+      "redirectType": {
+        "gamecreated": 1,
+        "cointoss": 2,
+        "gameplay": 3,
+        "selectteam": 4,
+        "selectplayers": 5
+      },
+      "jMaxForeignLimit": 4,
+      "bottomMenus": [
+        {
+          "key": 1,
+          "menuClassName": "ldc-profile",
+          "menuTitle": "menuTitle_1"
+        },
+        {
+          "key": 2,
+          "menuClassName": "ldc-stats",
+          "menuTitle": "menuTitle_2"
+        },
+        {
+          "key": 3,
+          "menuClassName": "ldc-gear",
+          "menuTitle": "menuTitle_3"
+        },
+        {
+          "key": 4,
+          "menuClassName": "ldc-qmark",
+          "menuTitle": "menuTitle_4"
+        }
+      ],
+      "trackConfig": {
+        "screenTrack": {
+          "homepage": {
+            "url": "homepage",
+            "class": ""
+          },
+          "play-with-friends": {
+            "url": "play-with-friends",
+            "class": ""
+          },
+          "gameplay": {
+            "url": "gameplay",
+            "class": ""
+          },
+          "settings": {
+            "url": "settings",
+            "class": ""
+          },
+          "leaderboard": {
+            "url": "leaderboard",
+            "class": ""
+          },
+          "how-to-play": {
+            "url": "how-to-play",
+            "class": ""
+          },
+          "login": {
+            "url": "login",
+            "class": ""
+          },
+          "registration": {
+            "url": "registration",
+            "class": ""
+          },
+          "my-profile": {
+            "url": "my-profile",
+            "class": ""
+          }
+        },
+        "eventTrack": {
+          "Play with friends": {
+            "eventName": "Play_with_friends",
+            "pageName": "Homepage"
+          },
+          "Play Online": {
+            "eventName": "Play_Online",
+            "pageName": "Homepage"
+          },
+          "Play Solo": {
+            "eventName": "Play_Solo",
+            "pageName": "Homepage"
+          },
+          "Create game": {
+            "eventName": "Create_game",
+            "pageName": "Play With Friends"
+          },
+          "Join game": {
+            "eventName": "Join_game",
+            "pageName": "Play With Friends"
+          },
+          "Confirm team button": {
+            "eventName": "Confirm_team_button",
+            "pageName": "Play With Friends"
+          },
+          "Share code button": {
+            "eventName": "Share_code_button",
+            "pageName": "Play With Friends"
+          },
+          "backFriends": {
+            "eventName": "Go_to_Homepage_back_button",
+            "pageName": "Play With Friends"
+          },
+          "confirmTeamOnline": {
+            "eventName": "Confirm_team_button",
+            "pageName": "Play online"
+          },
+          "backOnline": {
+            "eventName": "Go_to_Homepage_back_button",
+            "pageName": "Play online"
+          },
+          "Attack": {
+            "eventName": "Attack",
+            "pageName": "Gameplay"
+          },
+          "Defend": {
+            "eventName": "Defend",
+            "pageName": "Gameplay"
+          },
+          "Roll 2nd dice": {
+            "eventName": "Roll_2nd_dice",
+            "pageName": "Gameplay"
+          },
+          "Select card": {
+            "eventName": "Select_card",
+            "pageName": "Gameplay"
+          },
+          "View scorecard": {
+            "eventName": "View_scorecard",
+            "pageName": "Gameplay"
+          },
+          "Continue": {
+            "eventName": "Continue_end_of_innings",
+            "pageName": "Gameplay"
+          },
+          "Select opening batsmen": {
+            "eventName": "Select_opening_batsmen",
+            "pageName": "Gameplay"
+          },
+          "Select opening bowler": {
+            "eventName": "Select_opening_bowler",
+            "pageName": "Gameplay"
+          },
+          "Select next batsman": {
+            "eventName": "Select_next_batsman",
+            "pageName": "Gameplay"
+          },
+          "Select next bowler": {
+            "eventName": "Select_next_bowler",
+            "pageName": "Gameplay"
+          },
+          "Back button": {
+            "eventName": "Back_button",
+            "pageName": "Gameplay"
+          },
+          "How to play": {
+            "eventName": "How_to_play",
+            "pageName": "Settings"
+          },
+          "FAQs": {
+            "eventName": "FAQs",
+            "pageName": "Settings"
+          },
+          "Privacy policy": {
+            "eventName": "Privacy_policy",
+            "pageName": "Settings"
+          },
+          "Logout": {
+            "eventName": "Logout",
+            "pageName": "Settings"
+          },
+          "Homepage icon": {
+            "eventName": "Homepage_icon",
+            "pageName": "Settings"
+          },
+          "Edit profile": {
+            "eventName": "Edit_profile",
+            "pageName": "My profile"
+          },
+          "LogoutProfile": {
+            "eventName": "Logout",
+            "pageName": "My profile"
+          },
+          "Simulate Click Batsman": {
+            "eventName": "Simulate_Click_Batsman",
+            "pageName": "Gameplay"
+          },
+          "Simulate Start Batsman": {
+            "eventName": "Simulate_Start_Batsman",
+            "pageName": "Gameplay"
+          },
+          "Simulate Click Bowler": {
+            "eventName": "Simulate_Click_Bowler",
+            "pageName": "Gameplay"
+          },
+          "Simulate Start Bowler": {
+            "eventName": "Simulate_Start_Bowler",
+            "pageName": "Gameplay"
+          }
+        }
+      },
+      "videoTut": "",
+      "gameMode": [
+        {
+          "key": 1,
+          "modeImg": "homepage/arcade-mode",
+          "modeTitle": "modeTitle_1",
+          "modeDesc": "modeDesc_1",
+          "redirectMode": "arcade-mode",
+          "eventName": "Play with friends",
+          "enableMode": true
+        },
+        {
+          "key": 2,
+          "modeImg": "homepage/online-mode",
+          "modeTitle": "modeTitle_2",
+          "modeDesc": "modeDesc_2",
+          "redirectMode": "select-team",
+          "eventName": "Play Online",
+          "enableMode": true
+        },
+        {
+          "key": 3,
+          "modeImg": "homepage/solo-mode",
+          "modeTitle": "modeTitle_3",
+          "modeDesc": "modeDesc_3",
+          "redirectMode": "solo-mode",
+          "eventName": "Play Solo",
+          "enableMode": true
+        }
+      ],
+      "gameModeNew": [
+        {
+          "key": 1,
+          "modeImg": "homepage/arcade-mode",
+          "modeTitle": "modeTitle_1",
+          "modeDesc": "modeDesc_1",
+          "redirectMode": "arcade-mode",
+          "eventName": "Play with friends",
+          "enableMode": true
+        },
+        {
+          "key": 2,
+          "modeImg": "homepage/online-mode",
+          "modeTitle": "modeTitle_2",
+          "modeDesc": "modeDesc_2",
+          "redirectMode": "select-team",
+          "eventName": "Play Online",
+          "enableMode": true
+        },
+        {
+          "key": 3,
+          "modeImg": "homepage/solo-mode",
+          "modeTitle": "modeTitle_3",
+          "modeDesc": "modeDesc_3",
+          "redirectMode": "select-team",
+          "eventName": "Play Solo",
+          "enableMode": true
+        }
+      ],
+      "ERROR_CODE": [
+        "NO_MATCH_FOUND",
+        "GAME_HAS_ENDED",
+        "INVALID_GAME_ID",
+        "INVALID_INPUT",
+        "ROOM_EXPIRED",
+        "INVALID_USER_ID",
+        "DB_ERROR",
+        "101"
+      ],
+      "registeredBonus": 2500,
+      "tutorialTimeout": 1000,
+      "hintInterval": 10000,
+      "regErrCode": {
+        "1001": "EXP_ALREADY_EXISTS_EMAILID",
+        "1002": "EXP_INVALID_SOCIALID",
+        "1003": "EXP_INVALID_FAV_INT_TEAMID",
+        "1004": "EXP_INVALID_FAV_IPL_TEAMID",
+        "1005": "EXP_INVALID_EMAILID",
+        "1006": "EXP_INVALID_USER_NAME",
+        "1007": "EXP_ALREADY_EXISTS_USERNAME",
+        "1010": "EXP_ALREADY_EXISTS_USERNAME",
+        "1011": "EXP_USER_DOES_NOT_EXIST",
+        "-1": "DB_ERROR"
+      },
+      "tutsConfig": {
+        "tooltipTimeout": 5000,
+        "highlightTimeout": 2000,
+        "bigtooltipTimeout": 8000,
+        "tooltipTextLimit": 100,
+        "screenType": {
+          "start": 1,
+          "batting": 2,
+          "bowling": 3
+        },
+        "actionType": {
+          "selection": 1,
+          "brief": 2,
+          "play": 3
+        }
+      },
+      "preSelectedTeam": {
+        "1": [
+          4196,
+          5380,
+          4308,
+          63706,
+          10085,
+          66573,
+          10094,
+          10053,
+          56964,
+          58913,
+          57308
+        ],
+        "2": [
+          61361,
+          3903,
+          63206,
+          3693,
+          11756,
+          57952,
+          61831,
+          3956,
+          3782,
+          58598,
+          64151
+        ],
+        "3": [
+          33031,
+          19394,
+          9782,
+          10129,
+          3823,
+          22878,
+          10130,
+          64149,
+          4688,
+          64254,
+          4661
+        ],
+        "4": [
+          3722,
+          3852,
+          60122,
+          3993,
+          63961,
+          65756,
+          63751,
+          3850,
+          63755,
+          63187,
+          5132
+        ],
+        "5": [
+          11724,
+          4964,
+          4330,
+          63867,
+          11703,
+          57903,
+          10172,
+          58214,
+          4338,
+          57625,
+          4235
+        ],
+        "6": [
+          59429,
+          4250,
+          57492,
+          27042,
+          4038,
+          2734,
+          3472,
+          11025,
+          64306,
+          7768,
+          11965
+        ],
+        "7": [
+          4356,
+          28891,
+          28035,
+          5313,
+          12518,
+          59736,
+          48816,
+          4945,
+          63611,
+          64225,
+          3674
+        ],
+        "8": [
+          11757,
+          63882,
+          57454,
+          5244,
+          57440,
+          59463,
+          4417,
+          7836,
+          63211,
+          3571,
+          5388
+        ],
+        "9": [
+          1201,
+          59314,
+          3861,
+          64861,
+          4257,
+          63726,
+          12047,
+          3556,
+          11229,
+          65286,
+          61505
+        ],
+        "1188": [
+          7795,
+          65869,
+          57991,
+          64657,
+          68027,
+          7798,
+          7797,
+          67540,
+          65748,
+          56961,
+          56960
+        ],
+        "1105": [
+          3993,
+          3366,
+          3675,
+          4311,
+          11703,
+          57001,
+          65859,
+          4688,
+          9844,
+          64448,
+          5221
+        ],
+        "1106": [
+          10062,
+          66818,
+          63649,
+          3723,
+          3632,
+          12047,
+          11229,
+          63187,
+          63719,
+          3729,
+          63363
+        ],
+        "1107": [
+          60122,
+          62297,
+          5313,
+          10115,
+          63726,
+          10085,
+          4555,
+          67540,
+          63352,
+          28994,
+          63338
+        ],
+        "1108": [
+          63345,
+          4176,
+          3700,
+          28891,
+          4532,
+          3676,
+          3355,
+          3556,
+          3850,
+          1367,
+          5090
+        ],
+        "1109": [
+          3722,
+          66812,
+          11724,
+          9805,
+          63961,
+          65756,
+          48816,
+          62576,
+          3480,
+          63611,
+          3899
+        ],
+        "1110": [
+          3991,
+          9782,
+          61837,
+          4308,
+          60205,
+          10130,
+          58155,
+          4178,
+          57625,
+          5153,
+          4599
+        ],
+        "1111": [
+          28035,
+          3852,
+          11803,
+          3314,
+          64712,
+          3910,
+          10025,
+          63751,
+          3571,
+          63755,
+          66823
+        ],
+        "1379": [
+          5380,
+          19394,
+          4330,
+          4276,
+          4508,
+          3724,
+          65748,
+          10116,
+          61693,
+          5132,
+          9848
+        ]
+      },
+      "simulationInterval": 1000,
+      "emojiAnimTime": 6000,
+      "emojiPopupAnimTime": 150,
+      "emojiBtnDisabledTime": 300,
+      "emojiFirstTimeTooltipTimeout": 6000,
+      "emojis": {
+        "bat": [
+          {
+            "bat": true,
+            "icon": "/emojis/thumbs_up_face.png",
+            "emoji": "thumbs_up_face",
+            "tip": "Well bowled"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/careful_face.png",
+            "emoji": "careful_face",
+            "tip": "Need to be careful now!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/lucky_face.png",
+            "emoji": "lucky_face",
+            "tip": "Got lucky there!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/angry_face.png",
+            "emoji": "angry_face",
+            "tip": "Need to hit the bad balls"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/open_mouth_face.png",
+            "emoji": "open_mouth_face",
+            "tip": "Oh no!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/frowning_face.png",
+            "emoji": "frowning_face",
+            "tip": "What a poor shot"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/winking_with_tongue_face.png",
+            "emoji": "winking_with_tongue_face",
+            "tip": "Phew!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/thinking_face.png",
+            "emoji": "thinking_face",
+            "tip": "Another good delivery"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/anxious_face.png",
+            "emoji": "anxious_face",
+            "tip": "Coming down to the wire"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/partying_face.png",
+            "emoji": "partying_face",
+            "tip": "What a knock"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/smiling_sunglass_face.png",
+            "emoji": "smiling_sunglass_face",
+            "tip": "Big innings coming up"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/purple_cap_face.png",
+            "emoji": "purple_cap_face",
+            "tip": "Run Machine!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/money_mouth_face.png",
+            "emoji": "money_mouth_face",
+            "tip": "Four More!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/punch_face.png",
+            "emoji": "punch_face",
+            "tip": "Big Hitter!"
+          },
+          {
+            "bat": true,
+            "icon": "/emojis/praying_face.png",
+            "emoji": "praying_face",
+            "tip": "Please bat well"
+          }
+        ],
+        "bowl": [
+          {
+            "bowl": true,
+            "icon": "/emojis/thumbs_up_face.png",
+            "emoji": "thumbs_up_face",
+            "tip": "Nice Shot!"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/smiling_sunglass_face.png",
+            "emoji": "smiling_sunglass_face",
+            "tip": "Got you this time!"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/winking_with_tongue_face.png",
+            "emoji": "winking_with_tongue_face",
+            "tip": "Got away with it!"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/face_symbol_mouth_face.png",
+            "emoji": "face_symbol_mouth_face",
+            "tip": "Should have been out"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/open_mouth_face.png",
+            "emoji": "open_mouth_face",
+            "tip": "What bad luck"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/frowning_face.png",
+            "emoji": "frowning_face",
+            "tip": "Only loose deliveries"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/angry_face.png",
+            "emoji": "angry_face",
+            "tip": "I'll get you next time"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/thinking_face.png",
+            "emoji": "thinking_face",
+            "tip": "Another boundary"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/anxious_face.png",
+            "emoji": "anxious_face",
+            "tip": "Coming down to the wire"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/partying_face.png",
+            "emoji": "partying_face",
+            "tip": "What a spell"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/hatrick_face.png",
+            "emoji": "hatrick_face",
+            "tip": "Hat trick chance"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/orange_cap_face.png",
+            "emoji": "orange_cap_face",
+            "tip": "Wicket taker!"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/devil_face.png",
+            "emoji": "devil_face",
+            "tip": "This is going to be fast"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/dizzy_face.png",
+            "emoji": "dizzy_face",
+            "tip": "Spinning you out"
+          },
+          {
+            "bowl": true,
+            "icon": "/emojis/praying_face.png",
+            "emoji": "praying_face",
+            "tip": "Please bowl well"
+          }
+        ]
+      }
+    }
+  }
+}
