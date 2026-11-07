@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 111001,
+      "dispName": "Pat Cummins",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 2,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 111002,
+      "dispName": "Travis Head",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 185.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 111003,
+      "dispName": "Abhishek Sharma",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 180.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 111004,
+      "dispName": "Heinrich Klaasen",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 4,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 175.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111005,
+      "dispName": "Nitish Kumar Reddy",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 111006,
+      "dispName": "Aiden Markram",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 111007,
+      "dispName": "Abdul Samad",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 111008,
+      "dispName": "Shahbaz Ahmed",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 111009,
+      "dispName": "Bhuvneshwar Kumar",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 2.0
+      },
+      "bowlingStats": {
+        "eco": 7.5,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 111010,
+      "dispName": "T. Natarajan",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.7,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 111011,
+      "dispName": "Mayank Markande",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.6,
+        "rating": 3.5
+      }
+    }
+  ]
+}
