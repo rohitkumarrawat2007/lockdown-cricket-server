@@ -1,0 +1,196 @@
+{
+  "players": [
+    {
+      "id": 101,
+      "dispName": "Rohit Sharma",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 145.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 102,
+      "dispName": "Virat Kohli",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 103,
+      "dispName": "Suryakumar Yadav",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 172.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 104,
+      "dispName": "Rishabh Pant",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 146.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 105,
+      "dispName": "Hardik Pandya",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.1,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 106,
+      "dispName": "Shivam Dube",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 158.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.2,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 107,
+      "dispName": "Ravindra Jadeja",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 136.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 108,
+      "dispName": "Axar Patel",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 109,
+      "dispName": "Kuldeep Yadav",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 6.8,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110,
+      "dispName": "Jasprit Bumrah",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 90.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 6.2,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 111,
+      "dispName": "Arshdeep Singh",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 75.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.6,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 112,
+      "dispName": "Mohammed Siraj",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.9,
+        "rating": 4.0
+      }
+    }
+  ]
+}
