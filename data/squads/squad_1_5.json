@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 501,
+      "dispName": "Devon Conway",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 502,
+      "dispName": "Finn Allen",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 162.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 503,
+      "dispName": "Kane Williamson",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 132.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 1.5
+      }
+    },
+    {
+      "id": 504,
+      "dispName": "Daryl Mitchell",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 505,
+      "dispName": "Glenn Phillips",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 506,
+      "dispName": "Mark Chapman",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 5,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 2.0
+      }
+    },
+    {
+      "id": 507,
+      "dispName": "Mitchell Santner",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 128.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 6.8,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 508,
+      "dispName": "Tim Southee",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 120.0,
+        "rating": 3.0
+      },
+      "bowlingStats": {
+        "eco": 7.7,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 509,
+      "dispName": "Matt Henry",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.5,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 510,
+      "dispName": "Lockie Ferguson",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 85.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.3,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 511,
+      "dispName": "Trent Boult",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 5,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.1,
+        "rating": 5.0
+      }
+    }
+  ]
+}
