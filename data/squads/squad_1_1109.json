@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 110901,
+      "dispName": "Rishabh Pant",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110902,
+      "dispName": "David Warner",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110903,
+      "dispName": "Axar Patel",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.4,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110904,
+      "dispName": "Kuldeep Yadav",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 6.9,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 110905,
+      "dispName": "Jake Fraser-McGurk",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 2,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 185.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110906,
+      "dispName": "Tristan Stubbs",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.0,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 110907,
+      "dispName": "Prithvi Shaw",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 148.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 110908,
+      "dispName": "Khaleel Ahmed",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110909,
+      "dispName": "Mukesh Kumar",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 1,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 110910,
+      "dispName": "Anrich Nortje",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 4,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 65.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 110911,
+      "dispName": "Abishek Porel",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 1,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 150.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    }
+  ]
+}
