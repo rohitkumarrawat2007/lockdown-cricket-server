@@ -1,0 +1,16 @@
+{
+  "Value": {
+    "Translations": {
+      "modeTitle_1": "Play with friends",
+      "modeDesc_1": "Create/join a room to play",
+      "modeTitle_2": "Play online",
+      "modeDesc_2": "Compete with other online users",
+      "modeTitle_3": "SOLO MODE",
+      "modeDesc_3": "Improve your playing skills",
+      "menuTitle_1": "My Profile",
+      "menuTitle_2": "Leaderboard",
+      "menuTitle_3": "Settings",
+      "menuTitle_4": "How to play"
+    }
+  }
+}
