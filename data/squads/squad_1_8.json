@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 801,
+      "dispName": "Litton Das",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 802,
+      "dispName": "Tanzid Hasan",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 803,
+      "dispName": "Najmul Hossain Shanto",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 128.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.5,
+        "rating": 1.5
+      }
+    },
+    {
+      "id": 804,
+      "dispName": "Shakib Al Hasan",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 8,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 6.9,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 805,
+      "dispName": "Towhid Hridoy",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 140.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 806,
+      "dispName": "Mahmudullah",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 132.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 807,
+      "dispName": "Jaker Ali",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 8,
+      "rating": 3.5,
+      "battingStats": {
+        "sr": 135.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 808,
+      "dispName": "Rishad Hossain",
+      "skillId": 2,
+      "secSkillId": 3,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 125.0,
+        "rating": 3.0
+      },
+      "bowlingStats": {
+        "eco": 7.2,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 809,
+      "dispName": "Taskin Ahmed",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 8,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.5,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 810,
+      "dispName": "Mustafizur Rahman",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 8,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 70.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.3,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 811,
+      "dispName": "Shoriful Islam",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 8,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 65.0,
+        "rating": 1.0
+      },
+      "bowlingStats": {
+        "eco": 7.8,
+        "rating": 4.0
+      }
+    }
+  ]
+}
