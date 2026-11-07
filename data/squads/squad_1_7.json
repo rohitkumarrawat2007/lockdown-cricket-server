@@ -1,0 +1,180 @@
+{
+  "players": [
+    {
+      "id": 701,
+      "dispName": "Brandon King",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 138.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 702,
+      "dispName": "Kyle Mayers",
+      "skillId": 3,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 142.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.2,
+        "rating": 3.0
+      }
+    },
+    {
+      "id": 703,
+      "dispName": "Nicholas Pooran",
+      "skillId": 4,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 165.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 704,
+      "dispName": "Shai Hope",
+      "skillId": 1,
+      "secSkillId": 4,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 132.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 705,
+      "dispName": "Shimron Hetmyer",
+      "skillId": 1,
+      "secSkillId": 1,
+      "countryId": 7,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 158.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 9.0,
+        "rating": 1.0
+      }
+    },
+    {
+      "id": 706,
+      "dispName": "Rovman Powell",
+      "skillId": 1,
+      "secSkillId": 3,
+      "countryId": 7,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 155.0,
+        "rating": 4.5
+      },
+      "bowlingStats": {
+        "eco": 8.8,
+        "rating": 2.5
+      }
+    },
+    {
+      "id": 707,
+      "dispName": "Andre Russell",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 5.0,
+      "battingStats": {
+        "sr": 175.0,
+        "rating": 5.0
+      },
+      "bowlingStats": {
+        "eco": 8.4,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 708,
+      "dispName": "Jason Holder",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 130.0,
+        "rating": 3.5
+      },
+      "bowlingStats": {
+        "eco": 8.1,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": 709,
+      "dispName": "Romario Shepherd",
+      "skillId": 3,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 4.0,
+      "battingStats": {
+        "sr": 160.0,
+        "rating": 4.0
+      },
+      "bowlingStats": {
+        "eco": 8.9,
+        "rating": 3.5
+      }
+    },
+    {
+      "id": 710,
+      "dispName": "Akeal Hosein",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 110.0,
+        "rating": 2.5
+      },
+      "bowlingStats": {
+        "eco": 7.0,
+        "rating": 5.0
+      }
+    },
+    {
+      "id": 711,
+      "dispName": "Alzarri Joseph",
+      "skillId": 2,
+      "secSkillId": 2,
+      "countryId": 7,
+      "rating": 4.5,
+      "battingStats": {
+        "sr": 80.0,
+        "rating": 1.5
+      },
+      "bowlingStats": {
+        "eco": 7.9,
+        "rating": 4.5
+      }
+    }
+  ]
+}
